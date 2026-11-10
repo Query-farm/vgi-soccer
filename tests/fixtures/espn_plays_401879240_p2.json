@@ -1,0 +1,293 @@
+{
+ "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays?source=38&lang=en&region=us",
+ "count": 1441,
+ "pageIndex": 2,
+ "pageSize": 1000,
+ "pageCount": 2,
+ "items": [
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55106009?lang=en&region=us",
+   "id": "55106009",
+   "type": {
+    "id": "118",
+    "text": "Pass",
+    "type": "pass"
+   },
+   "text": "Mason Mount (Manchester United) Pass at 67'",
+   "shortText": "Mason Mount Pass",
+   "alternativeText": "Mason Mount (Manchester United) Pass at 67'",
+   "shortAlternativeText": "Mason Mount Pass",
+   "awayScore": 4,
+   "homeScore": 2,
+   "period": {
+    "number": 2
+   },
+   "clock": {
+    "value": 4005.0,
+    "displayValue": "67'"
+   },
+   "valid": true,
+   "scoringPlay": false,
+   "priority": false,
+   "scoreValue": 0,
+   "modified": "2026-11-08T17:58Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/360?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "7",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/231167?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/360?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/27?lang=en&region=us"
+     },
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/competitors/360/roster/231167/statistics/0?lang=en&region=us"
+     },
+     "order": 1,
+     "type": "passer"
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T17:57:56Z",
+   "statYardage": 0,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": false,
+   "modifiedDate": "2026-11-08T17:58Z",
+   "fieldPositionX": 63.5,
+   "fieldPositionY": 47.7,
+   "fieldPosition2X": 61.6,
+   "fieldPosition2Y": 26.8
+  },
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55106068?lang=en&region=us",
+   "id": "55106068",
+   "type": {
+    "id": "118",
+    "text": "Pass",
+    "type": "pass"
+   },
+   "text": "Leny Yoro (Manchester United) Pass at 67'",
+   "shortText": "Leny Yoro Pass",
+   "alternativeText": "Leny Yoro (Manchester United) Pass at 67'",
+   "shortAlternativeText": "Leny Yoro Pass",
+   "awayScore": 4,
+   "homeScore": 2,
+   "period": {
+    "number": 2
+   },
+   "clock": {
+    "value": 4007.0,
+    "displayValue": "67'"
+   },
+   "valid": true,
+   "scoringPlay": false,
+   "priority": false,
+   "scoreValue": 0,
+   "modified": "2026-11-08T17:58Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/360?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "15",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/340206?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/360?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/5?lang=en&region=us"
+     },
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/competitors/360/roster/340206/statistics/0?lang=en&region=us"
+     },
+     "order": 1,
+     "type": "passer"
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T17:57:58Z",
+   "statYardage": 0,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": false,
+   "modifiedDate": "2026-11-08T17:58Z",
+   "fieldPositionX": 61.6,
+   "fieldPositionY": 26.8,
+   "fieldPosition2X": 78.1,
+   "fieldPosition2Y": 6.0
+  },
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55106070?lang=en&region=us",
+   "id": "55106070",
+   "type": {
+    "id": "65",
+    "text": "Cross",
+    "type": "cross"
+   },
+   "text": "Shea Lacey (Manchester United) Cross at 67'",
+   "shortText": "Shea Lacey Cross",
+   "alternativeText": "Shea Lacey (Manchester United) Cross at 67'",
+   "shortAlternativeText": "Shea Lacey Cross",
+   "awayScore": 4,
+   "homeScore": 2,
+   "period": {
+    "number": 2
+   },
+   "clock": {
+    "value": 4011.0,
+    "displayValue": "67'"
+   },
+   "valid": true,
+   "scoringPlay": false,
+   "priority": false,
+   "scoreValue": 0,
+   "modified": "2026-11-08T18:06Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/360?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "31",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/358180?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/360?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/27?lang=en&region=us"
+     },
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/competitors/360/roster/358180/statistics/0?lang=en&region=us"
+     },
+     "order": 1
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T17:58:02Z",
+   "statYardage": 0,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": false,
+   "modifiedDate": "2026-11-08T18:06Z",
+   "fieldPositionX": 83.7,
+   "fieldPositionY": 15.0,
+   "fieldPosition2X": 86.1,
+   "fieldPosition2Y": 41.2
+  },
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55106072?lang=en&region=us",
+   "id": "55106072",
+   "type": {
+    "id": "63",
+    "text": "Clear",
+    "type": "clear"
+   },
+   "text": "Pau Torres (Aston Villa) Clear at 67'",
+   "shortText": "Pau Torres Clear",
+   "alternativeText": "Pau Torres (Aston Villa) Clear at 67'",
+   "shortAlternativeText": "Pau Torres Clear",
+   "awayScore": 4,
+   "homeScore": 2,
+   "period": {
+    "number": 2
+   },
+   "clock": {
+    "value": 4013.0,
+    "displayValue": "67'"
+   },
+   "valid": true,
+   "scoringPlay": false,
+   "priority": false,
+   "scoreValue": 0,
+   "modified": "2026-11-08T17:58Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "14",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/251100?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/4?lang=en&region=us"
+     },
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/competitors/362/roster/251100/statistics/0?lang=en&region=us"
+     },
+     "order": 1
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T17:58:04Z",
+   "contactType": {
+    "id": "10",
+    "text": "Header"
+   },
+   "statYardage": 0,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": false,
+   "modifiedDate": "2026-11-08T17:58Z",
+   "fieldPositionX": 12.6,
+   "fieldPositionY": 55.3
+  }
+ ]
+}

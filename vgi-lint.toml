@@ -1,0 +1,28 @@
+location = "uv run --project . vgi-soccer"
+select = ["ALL"]
+fail_on = "warning"
+
+ignore = [
+  { code = "VGI311", kind = "tooling-bug", reason = """\
+Each parameterless all_* scan is exposed as its corresponding table (all_leagues as leagues, \
+all_current_standings as current_standings, and so on). The rule only recognizes matching names, \
+but a function and table cannot share a name inside one schema; the deliberate all_* names avoid \
+those collisions.\
+""" },
+]
+
+# Agent tasks exercise the public leagues and current_* tables, which invoke these
+# backing scans. Teaching agents to call the implementation functions directly
+# would undermine the table abstraction; the hermetic Haybarn E2E test executes
+# every backing scan through its table. Every other function is covered by a task.
+[per_object."soccer.main.all_leagues"]
+ignore = [{ code = "VGI520", kind = "domain-exemption", reason = "Backing scan of the leagues table, which agent tasks exercise directly." }]
+
+[per_object."soccer.main.all_current_standings"]
+ignore = [{ code = "VGI520", kind = "domain-exemption", reason = "Backing scan of the current_standings table, which agent tasks exercise directly." }]
+
+[per_object."soccer.main.all_current_matches"]
+ignore = [{ code = "VGI520", kind = "domain-exemption", reason = "Backing scan of the current_matches table, which agent tasks exercise directly." }]
+
+[per_object."soccer.main.all_current_stat_leaders"]
+ignore = [{ code = "VGI520", kind = "domain-exemption", reason = "Backing scan of the current_stat_leaders table, which agent tasks exercise directly." }]

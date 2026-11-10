@@ -1,0 +1,196 @@
+{
+ "leagues": [
+  {
+   "id": "606",
+   "alternateId": "4",
+   "name": "FIFA World Cup",
+   "abbreviation": "FIFA World Cup",
+   "shortName": "FIFA World Cup",
+   "midsizeName": "FIFA.WORLD",
+   "slug": "fifa.world",
+   "season": {
+    "type": {
+     "id": "7",
+     "hasStandings": false
+    }
+   },
+   "hasStandings": true
+  },
+  {
+   "id": "775",
+   "alternateId": "2",
+   "name": "UEFA Champions League",
+   "abbreviation": "UEFA Champions League",
+   "shortName": "UEFA Champions League",
+   "midsizeName": "UEFA.CHAMPIONS",
+   "slug": "uefa.champions",
+   "season": {
+    "type": {
+     "id": "1",
+     "hasStandings": true
+    }
+   },
+   "hasStandings": true
+  },
+  {
+   "id": "700",
+   "alternateId": "23",
+   "name": "English Premier League",
+   "abbreviation": "Premier League",
+   "shortName": "Premier League",
+   "midsizeName": "ENG.1",
+   "slug": "eng.1",
+   "season": {
+    "type": {
+     "id": "1",
+     "hasStandings": true
+    }
+   },
+   "hasStandings": true
+  },
+  {
+   "id": "740",
+   "alternateId": "15",
+   "name": "Spanish LALIGA",
+   "abbreviation": "LALIGA",
+   "shortName": "LALIGA",
+   "midsizeName": "ESP.1",
+   "slug": "esp.1",
+   "season": {
+    "type": {
+     "id": "1",
+     "hasStandings": true
+    }
+   },
+   "hasStandings": true
+  },
+  {
+   "id": "720",
+   "alternateId": "10",
+   "name": "German Bundesliga",
+   "abbreviation": "Bundesliga",
+   "shortName": "Bundesliga",
+   "midsizeName": "GER.1",
+   "slug": "ger.1",
+   "season": {
+    "type": {
+     "id": "1",
+     "hasStandings": true
+    }
+   },
+   "hasStandings": true
+  },
+  {
+   "id": "730",
+   "alternateId": "12",
+   "name": "Italian Serie A",
+   "abbreviation": "Serie A",
+   "shortName": "Serie A",
+   "midsizeName": "ITA.1",
+   "slug": "ita.1",
+   "season": {
+    "type": {
+     "id": "1",
+     "hasStandings": true
+    }
+   },
+   "hasStandings": true
+  },
+  {
+   "id": "19483",
+   "alternateId": "2408",
+   "name": "UEFA Women's Champions League",
+   "abbreviation": "UEFA Women's Champions League",
+   "shortName": "UEFA Women's Champions League",
+   "midsizeName": "UEFA.WCHAMPIONS",
+   "slug": "uefa.wchampions",
+   "season": {
+    "type": {
+     "id": "1",
+     "hasStandings": true
+    }
+   },
+   "hasStandings": true
+  },
+  {
+   "id": "710",
+   "alternateId": "9",
+   "name": "French Ligue 1",
+   "abbreviation": "Ligue 1",
+   "shortName": "Ligue 1",
+   "midsizeName": "FRA.1",
+   "slug": "fra.1",
+   "season": {
+    "type": {
+     "id": "1",
+     "hasStandings": true
+    }
+   },
+   "hasStandings": true
+  },
+  {
+   "id": "3918",
+   "alternateId": "40",
+   "name": "English FA Cup",
+   "abbreviation": "English FA Cup",
+   "shortName": "English FA Cup",
+   "midsizeName": "ENG.FA",
+   "slug": "eng.fa",
+   "season": {
+    "type": {
+     "id": "1",
+     "hasStandings": false
+    }
+   },
+   "hasStandings": false
+  },
+  {
+   "id": "3951",
+   "alternateId": "80",
+   "name": "Spanish Copa del Rey",
+   "abbreviation": "Copa del Rey",
+   "shortName": "Copa del Rey",
+   "midsizeName": "ESP.COPA_DEL_REY",
+   "slug": "esp.copa_del_rey",
+   "season": {
+    "type": {
+     "id": "2",
+     "hasStandings": false
+    }
+   },
+   "hasStandings": false
+  },
+  {
+   "id": "18481",
+   "alternateId": "42",
+   "name": "English EFL Trophy",
+   "abbreviation": "EFL Trophy",
+   "shortName": "EFL Trophy",
+   "midsizeName": "ENG.TROPHY",
+   "slug": "eng.trophy",
+   "season": {
+    "type": {
+     "id": "1",
+     "hasStandings": true
+    }
+   },
+   "hasStandings": true
+  },
+  {
+   "id": "5499",
+   "alternateId": "1929",
+   "name": "NCAA Women's Soccer",
+   "abbreviation": "CWSOC",
+   "shortName": "NCAAW Soccer",
+   "midsizeName": "USA.NCAA.W.1",
+   "slug": "usa.ncaa.w.1",
+   "season": {
+    "type": {
+     "id": "1",
+     "hasStandings": false
+    }
+   },
+   "hasStandings": false
+  }
+ ]
+}

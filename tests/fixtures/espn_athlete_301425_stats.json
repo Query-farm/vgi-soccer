@@ -1,0 +1,550 @@
+{
+ "filters": [
+  {
+   "displayName": "Team",
+   "name": "team",
+   "value": "360",
+   "options": [
+    {
+     "value": "17544",
+     "displayValue": "Antwerp"
+    },
+    {
+     "value": "459",
+     "displayValue": "Belgium"
+    },
+    {
+     "value": "11669",
+     "displayValue": "Belgium U21"
+    },
+    {
+     "value": "570",
+     "displayValue": "Club Brugge"
+    },
+    {
+     "value": "360",
+     "displayValue": "Manchester United"
+    }
+   ]
+  },
+  {
+   "displayName": "League",
+   "name": "league",
+   "value": "eng.1",
+   "options": [
+    {
+     "value": "eng.league_cup",
+     "displayValue": "Carabao Cup"
+    },
+    {
+     "value": "eng.fa",
+     "displayValue": "English FA Cup"
+    },
+    {
+     "value": "eng.1",
+     "displayValue": "Premier League"
+    },
+    {
+     "value": "uefa.champions",
+     "displayValue": "UEFA Champions League"
+    }
+   ]
+  }
+ ],
+ "teams": {
+  "eng.man_utd": {
+   "id": "360",
+   "uid": "s:600~t:360",
+   "guid": "6ebc2fd0-35d3-733b-5666-b75035a3bce9",
+   "slug": "eng.man_utd",
+   "location": "Manchester United",
+   "name": "Manchester United",
+   "nickname": "Red Devils",
+   "abbreviation": "MAN",
+   "displayName": "Manchester United",
+   "shortDisplayName": "Man Utd",
+   "color": "da020e",
+   "alternateColor": "4169E1",
+   "isActive": true,
+   "isAllStar": false,
+   "groups": {},
+   "coaches": {},
+   "venue": {
+    "id": "250",
+    "fullName": "Old Trafford",
+    "address": {
+     "city": "Manchester",
+     "country": "England"
+    }
+   },
+   "record": {},
+   "defaultLeague": {
+    "id": "700",
+    "uid": "s:600~l:700",
+    "name": "English Premier League",
+    "displayName": "Premier League",
+    "abbreviation": "Premier League",
+    "slug": "eng.1",
+    "isTournament": false,
+    "season": {
+     "year": 2026,
+     "startDate": "2026-06-01T04:00:00.000+00:00",
+     "endDate": "2027-06-01T03:59:00.000+00:00",
+     "type": {
+      "id": "1",
+      "type": 14308,
+      "name": "2026-27 English Premier League",
+      "abbreviation": "2026-27 English Premier League",
+      "slug": "2026-27-english-premier-league",
+      "startDate": "2026-06-01T04:00:00.000+00:00",
+      "endDate": "2027-06-01T03:59:00.000+00:00",
+      "hasGroups": false,
+      "hasStandings": true,
+      "hasLegs": false
+     },
+     "types": {
+      "count": 1,
+      "pageIndex": 1,
+      "pageSize": 1,
+      "pageCount": 1,
+      "items": [
+       {
+        "id": "1",
+        "type": 14308,
+        "name": "2026-27 English Premier League",
+        "abbreviation": "2026-27 English Premier League",
+        "slug": "2026-27-english-premier-league",
+        "startDate": "2026-06-01T04:00:00.000+00:00",
+        "endDate": "2027-06-01T03:59:00.000+00:00",
+        "hasGroups": false,
+        "hasStandings": true,
+        "hasLegs": false
+       }
+      ]
+     },
+     "displayName": "2026-27 English Premier League",
+     "shortDisplayName": "2026-27 English Premier League",
+     "abbreviation": "2026-27"
+    },
+    "seasons": {},
+    "franchises": {},
+    "midsizeName": "ENG.1",
+    "shortName": "Premier League",
+    "events": {},
+    "gender": "MALE"
+   },
+   "isNational": false,
+   "athletes": {},
+   "franchise": {}
+  }
+ },
+ "leagues": {
+  "eng.1": {
+   "id": "700",
+   "uid": "s:600~l:700",
+   "name": "English Premier League",
+   "displayName": "Premier League",
+   "abbreviation": "Premier League",
+   "slug": "eng.1",
+   "isTournament": false,
+   "season": {
+    "year": 2026,
+    "startDate": "2026-06-01T04:00:00.000+00:00",
+    "endDate": "2027-06-01T03:59:00.000+00:00",
+    "type": {
+     "id": "1",
+     "type": 14308,
+     "name": "2026-27 English Premier League",
+     "abbreviation": "2026-27 English Premier League",
+     "slug": "2026-27-english-premier-league",
+     "startDate": "2026-06-01T04:00:00.000+00:00",
+     "endDate": "2027-06-01T03:59:00.000+00:00",
+     "hasGroups": false,
+     "hasStandings": true,
+     "hasLegs": false
+    },
+    "types": {
+     "count": 1,
+     "pageIndex": 1,
+     "pageSize": 1,
+     "pageCount": 1,
+     "items": [
+      {
+       "id": "1",
+       "type": 14308,
+       "name": "2026-27 English Premier League",
+       "abbreviation": "2026-27 English Premier League",
+       "slug": "2026-27-english-premier-league",
+       "startDate": "2026-06-01T04:00:00.000+00:00",
+       "endDate": "2027-06-01T03:59:00.000+00:00",
+       "hasGroups": false,
+       "hasStandings": true,
+       "hasLegs": false
+      }
+     ]
+    },
+    "displayName": "2026-27 English Premier League",
+    "shortDisplayName": "2026-27 English Premier League",
+    "abbreviation": "2026-27"
+   },
+   "seasons": {},
+   "franchises": {},
+   "midsizeName": "ENG.1",
+   "shortName": "Premier League",
+   "events": {},
+   "gender": "MALE"
+  }
+ },
+ "categories": [
+  {
+   "displayName": "offensive",
+   "labels": [
+    "STRT",
+    "FC",
+    "FA",
+    "YC",
+    "RC",
+    "G",
+    "A",
+    "SHOT",
+    "SOG",
+    "OFF"
+   ],
+   "names": [
+    "STRT",
+    "FC",
+    "FA",
+    "YC",
+    "RC",
+    "G",
+    "A",
+    "SHOT",
+    "SOG",
+    "OFF"
+   ],
+   "displayNames": [
+    "Starts",
+    "Fouls Committed",
+    "Fouls Suffered",
+    "Yellow Cards",
+    "Red Cards",
+    "Total Goals",
+    "Assists",
+    "Shots",
+    "Shots On Goal",
+    "Offsides"
+   ],
+   "descriptions": [
+    "The number of starts a player has made in matches.",
+    "The number of fouls comitted by a player or team.",
+    "The number of fouls suffered by a player or team.",
+    "The number of yellow cards accumulated.",
+    "The number of red cards that have been issued.",
+    "The number of goals scored against the opposing team.",
+    "The number of assists.",
+    "The number of shots attempted.",
+    "The number of shots that are on goal.",
+    "The number of times a player or team gets caught offside."
+   ],
+   "statistics": [
+    {
+     "teamId": "360",
+     "teamSlug": "eng.man_utd",
+     "leagueId": "700",
+     "leagueSlug": "eng.1",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-06-01T04:00:00.000+00:00",
+      "endDate": "2027-06-01T03:59:00.000+00:00",
+      "type": {
+       "id": "1",
+       "type": 14308,
+       "name": "2026-27 English Premier League",
+       "abbreviation": "2026-27 English Premier League",
+       "slug": "2026-27-english-premier-league",
+       "startDate": "2026-06-01T04:00:00.000+00:00",
+       "endDate": "2027-06-01T03:59:00.000+00:00",
+       "hasGroups": false,
+       "hasStandings": true,
+       "hasLegs": false
+      },
+      "types": {
+       "count": 1,
+       "pageIndex": 1,
+       "pageSize": 1,
+       "pageCount": 1,
+       "items": [
+        {
+         "id": "1",
+         "type": 14308,
+         "name": "2026-27 English Premier League",
+         "abbreviation": "2026-27 English Premier League",
+         "slug": "2026-27-english-premier-league",
+         "startDate": "2026-06-01T04:00:00.000+00:00",
+         "endDate": "2027-06-01T03:59:00.000+00:00",
+         "hasGroups": false,
+         "hasStandings": true,
+         "hasLegs": false
+        }
+       ]
+      },
+      "displayName": "2026-27 English Premier League",
+      "shortDisplayName": "2026-27 English Premier League",
+      "abbreviation": "2026-27"
+     },
+     "stats": [
+      "10",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    },
+    {
+     "teamId": "360",
+     "teamSlug": "eng.man_utd",
+     "leagueId": "700",
+     "leagueSlug": "eng.1",
+     "season": {
+      "year": 2025,
+      "startDate": "2025-06-01T04:00:00.000+00:00",
+      "endDate": "2026-06-01T03:59:00.000+00:00",
+      "type": {
+       "id": "1",
+       "type": 13481,
+       "name": "2025-26 English Premier League",
+       "abbreviation": "2025-26 English Premier League",
+       "slug": "2025-26-english-premier-league",
+       "startDate": "2025-06-01T04:00:00.000+00:00",
+       "endDate": "2026-06-01T03:59:00.000+00:00",
+       "hasGroups": false,
+       "hasStandings": true,
+       "hasLegs": false
+      },
+      "types": {
+       "count": 1,
+       "pageIndex": 1,
+       "pageSize": 1,
+       "pageCount": 1,
+       "items": [
+        {
+         "id": "1",
+         "type": 13481,
+         "name": "2025-26 English Premier League",
+         "abbreviation": "2025-26 English Premier League",
+         "slug": "2025-26-english-premier-league",
+         "startDate": "2025-06-01T04:00:00.000+00:00",
+         "endDate": "2026-06-01T03:59:00.000+00:00",
+         "hasGroups": false,
+         "hasStandings": true,
+         "hasLegs": false
+        }
+       ]
+      },
+      "displayName": "2025-26 English Premier League",
+      "shortDisplayName": "2025-26 English Premier League",
+      "abbreviation": "2025-26"
+     },
+     "stats": [
+      "32",
+      "0",
+      "4",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  {
+   "displayName": "goalKeeping",
+   "labels": [
+    "CS",
+    "SV",
+    "GA"
+   ],
+   "names": [
+    "CS",
+    "SV",
+    "GA"
+   ],
+   "displayNames": [
+    "Clean Sheet",
+    "Saves",
+    "Goals Against"
+   ],
+   "descriptions": [
+    "The number of times a goalkeeper doesn't let in a goal.",
+    "The number of times a goalkeeper makes a save.",
+    "The number of goals allowed by the goalkeeper."
+   ],
+   "statistics": [
+    {
+     "teamId": "360",
+     "teamSlug": "eng.man_utd",
+     "leagueId": "700",
+     "leagueSlug": "eng.1",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-06-01T04:00:00.000+00:00",
+      "endDate": "2027-06-01T03:59:00.000+00:00",
+      "type": {
+       "id": "1",
+       "type": 14308,
+       "name": "2026-27 English Premier League",
+       "abbreviation": "2026-27 English Premier League",
+       "slug": "2026-27-english-premier-league",
+       "startDate": "2026-06-01T04:00:00.000+00:00",
+       "endDate": "2027-06-01T03:59:00.000+00:00",
+       "hasGroups": false,
+       "hasStandings": true,
+       "hasLegs": false
+      },
+      "types": {
+       "count": 1,
+       "pageIndex": 1,
+       "pageSize": 1,
+       "pageCount": 1,
+       "items": [
+        {
+         "id": "1",
+         "type": 14308,
+         "name": "2026-27 English Premier League",
+         "abbreviation": "2026-27 English Premier League",
+         "slug": "2026-27-english-premier-league",
+         "startDate": "2026-06-01T04:00:00.000+00:00",
+         "endDate": "2027-06-01T03:59:00.000+00:00",
+         "hasGroups": false,
+         "hasStandings": true,
+         "hasLegs": false
+        }
+       ]
+      },
+      "displayName": "2026-27 English Premier League",
+      "shortDisplayName": "2026-27 English Premier League",
+      "abbreviation": "2026-27"
+     },
+     "stats": [
+      "0",
+      "32",
+      "19"
+     ]
+    },
+    {
+     "teamId": "360",
+     "teamSlug": "eng.man_utd",
+     "leagueId": "700",
+     "leagueSlug": "eng.1",
+     "season": {
+      "year": 2025,
+      "startDate": "2025-06-01T04:00:00.000+00:00",
+      "endDate": "2026-06-01T03:59:00.000+00:00",
+      "type": {
+       "id": "1",
+       "type": 13481,
+       "name": "2025-26 English Premier League",
+       "abbreviation": "2025-26 English Premier League",
+       "slug": "2025-26-english-premier-league",
+       "startDate": "2025-06-01T04:00:00.000+00:00",
+       "endDate": "2026-06-01T03:59:00.000+00:00",
+       "hasGroups": false,
+       "hasStandings": true,
+       "hasLegs": false
+      },
+      "types": {
+       "count": 1,
+       "pageIndex": 1,
+       "pageSize": 1,
+       "pageCount": 1,
+       "items": [
+        {
+         "id": "1",
+         "type": 13481,
+         "name": "2025-26 English Premier League",
+         "abbreviation": "2025-26 English Premier League",
+         "slug": "2025-26-english-premier-league",
+         "startDate": "2025-06-01T04:00:00.000+00:00",
+         "endDate": "2026-06-01T03:59:00.000+00:00",
+         "hasGroups": false,
+         "hasStandings": true,
+         "hasLegs": false
+        }
+       ]
+      },
+      "displayName": "2025-26 English Premier League",
+      "shortDisplayName": "2025-26 English Premier League",
+      "abbreviation": "2025-26"
+     },
+     "stats": [
+      "8",
+      "79",
+      "39"
+     ]
+    }
+   ]
+  }
+ ],
+ "glossary": [
+  {
+   "abbreviation": "A",
+   "displayName": "Assists"
+  },
+  {
+   "abbreviation": "CS",
+   "displayName": "Clean Sheet"
+  },
+  {
+   "abbreviation": "FA",
+   "displayName": "Fouls Suffered"
+  },
+  {
+   "abbreviation": "FC",
+   "displayName": "Fouls Committed"
+  },
+  {
+   "abbreviation": "G",
+   "displayName": "Total Goals"
+  },
+  {
+   "abbreviation": "GA",
+   "displayName": "Goals Against"
+  },
+  {
+   "abbreviation": "OFF",
+   "displayName": "Offsides"
+  },
+  {
+   "abbreviation": "RC",
+   "displayName": "Red Cards"
+  },
+  {
+   "abbreviation": "SHOT",
+   "displayName": "Shots"
+  },
+  {
+   "abbreviation": "SOG",
+   "displayName": "Shots On Goal"
+  },
+  {
+   "abbreviation": "STRT",
+   "displayName": "Starts"
+  },
+  {
+   "abbreviation": "SV",
+   "displayName": "Saves"
+  },
+  {
+   "abbreviation": "YC",
+   "displayName": "Yellow Cards"
+  }
+ ]
+}

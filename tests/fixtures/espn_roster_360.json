@@ -1,0 +1,545 @@
+{
+ "timestamp": "2026-11-10T17:34:04Z",
+ "status": "success",
+ "season": {
+  "year": 2026,
+  "displayName": "2026-27 English Premier League",
+  "type": 14308,
+  "name": "2026-27 English Premier League"
+ },
+ "athletes": [
+  {
+   "id": "42250",
+   "uid": "s:600~a:42250",
+   "guid": "d190f827-c8bf-602d-c9ca-004fdcb74127",
+   "firstName": "Tom",
+   "lastName": "Heaton",
+   "fullName": "Tom Heaton",
+   "displayName": "Tom Heaton",
+   "shortName": "T. Heaton",
+   "weight": 185.0,
+   "displayWeight": "185 lbs",
+   "height": 74.0,
+   "displayHeight": "6' 2\"",
+   "age": 40,
+   "dateOfBirth": "1986-04-15T08:00Z",
+   "gender": "MALE",
+   "birthPlace": {},
+   "citizenship": "England",
+   "citizenshipCountry": {
+    "alternateId": "31",
+    "abbreviation": "ENG"
+   },
+   "slug": "tom-heaton",
+   "jersey": "22",
+   "position": {
+    "id": "1",
+    "name": "Goalkeeper",
+    "displayName": "Goalkeeper",
+    "abbreviation": "G",
+    "leaf": false
+   },
+   "injuries": [],
+   "status": {
+    "id": "1",
+    "name": "Active",
+    "type": "active",
+    "abbreviation": "Active"
+   },
+   "profiled": false
+  },
+  {
+   "id": "130877",
+   "uid": "s:600~a:130877",
+   "guid": "be16cb74-27a0-ca0c-ea05-956978659010",
+   "firstName": "Karl",
+   "lastName": "Darlow",
+   "fullName": "Karl Darlow",
+   "displayName": "Karl Darlow",
+   "shortName": "K. Darlow",
+   "weight": 192.0,
+   "displayWeight": "192 lbs",
+   "height": 75.0,
+   "displayHeight": "6' 3\"",
+   "age": 36,
+   "dateOfBirth": "1990-10-08T07:00Z",
+   "gender": "MALE",
+   "birthPlace": {},
+   "citizenship": "Wales",
+   "citizenshipCountry": {
+    "alternateId": "414",
+    "abbreviation": "WAL"
+   },
+   "slug": "karl-darlow",
+   "jersey": "12",
+   "position": {
+    "id": "1",
+    "name": "Goalkeeper",
+    "displayName": "Goalkeeper",
+    "abbreviation": "G",
+    "leaf": false
+   },
+   "injuries": [],
+   "statistics": {
+    "splits": {
+     "id": "0",
+     "name": "Total",
+     "abbreviation": "Total",
+     "type": "total",
+     "categories": [
+      {
+       "name": "general",
+       "displayName": "General",
+       "shortDisplayName": "General",
+       "abbreviation": "gen",
+       "summary": "",
+       "stats": [
+        {
+         "name": "foulsCommitted",
+         "displayName": "Fouls Committed",
+         "shortDisplayName": "FC",
+         "description": "The number of fouls comitted by a player or team.",
+         "abbreviation": "FC",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "foulsSuffered",
+         "displayName": "Fouls Suffered",
+         "shortDisplayName": "FA",
+         "description": "The number of fouls suffered by a player or team.",
+         "abbreviation": "FA",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "redCards",
+         "displayName": "Red Cards",
+         "shortDisplayName": "RC",
+         "description": "The number of red cards that have been issued.",
+         "abbreviation": "RC",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "yellowCards",
+         "displayName": "Yellow Cards",
+         "shortDisplayName": "YC",
+         "description": "The number of yellow cards accumulated.",
+         "abbreviation": "YC",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "ownGoals",
+         "displayName": "Own Goals",
+         "shortDisplayName": "OG",
+         "description": "The number of own goals conceded.",
+         "abbreviation": "OG",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "appearances",
+         "displayName": "Appearances",
+         "shortDisplayName": "APP",
+         "description": "The number of times a player has made an appearance in a match.",
+         "abbreviation": "APP",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "subIns",
+         "displayName": "Substitute Appearances",
+         "shortDisplayName": "SUBIN",
+         "description": "The number of times a player has come on a sub in a match.",
+         "abbreviation": "SUB",
+         "value": 0.0,
+         "displayValue": "0"
+        }
+       ]
+      },
+      {
+       "name": "offensive",
+       "displayName": "Offensive",
+       "shortDisplayName": "Offensive",
+       "abbreviation": "off",
+       "summary": "",
+       "stats": [
+        {
+         "name": "goalAssists",
+         "displayName": "Assists",
+         "shortDisplayName": "A",
+         "description": "The number of assists.",
+         "abbreviation": "A",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "offsides",
+         "displayName": "Offsides",
+         "shortDisplayName": "OFF",
+         "description": "The number of times a player or team gets caught offside.",
+         "abbreviation": "OFF",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "shotsOnTarget",
+         "displayName": "Shots On Goal",
+         "shortDisplayName": "SOG",
+         "description": "The number of shots that are on goal.",
+         "abbreviation": "SOG",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "totalShots",
+         "displayName": "Shots",
+         "shortDisplayName": "SHOT",
+         "description": "The number of shots attempted.",
+         "abbreviation": "SHOT",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "totalGoals",
+         "displayName": "Total Goals",
+         "shortDisplayName": "G",
+         "description": "The number of goals scored against the opposing team.",
+         "abbreviation": "G",
+         "value": 0.0,
+         "displayValue": "0"
+        }
+       ]
+      },
+      {
+       "name": "goalKeeping",
+       "displayName": "Goal Keeping",
+       "shortDisplayName": "Goal Keeping",
+       "abbreviation": "gk",
+       "summary": "",
+       "stats": [
+        {
+         "name": "saves",
+         "displayName": "Saves",
+         "shortDisplayName": "SV",
+         "description": "The number of times a goalkeeper makes a save.",
+         "abbreviation": "SV",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "shotsFaced",
+         "displayName": "Shots Faced",
+         "shortDisplayName": "SHF",
+         "description": "The number of shots on target a goalkeeper has faced.",
+         "abbreviation": "SHF",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "goalsConceded",
+         "displayName": "Goals Against",
+         "shortDisplayName": "GA",
+         "description": "The number of goals allowed by the goalkeeper.",
+         "abbreviation": "GA",
+         "value": 0.0,
+         "displayValue": "0"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   "status": {
+    "id": "1",
+    "name": "Active",
+    "type": "active",
+    "abbreviation": "Active"
+   },
+   "profiled": false
+  },
+  {
+   "id": "301425",
+   "uid": "s:600~a:301425",
+   "guid": "83b92ff7-5bb8-3a8e-8f0d-42e292cba669",
+   "firstName": "Senne",
+   "middleName": "",
+   "lastName": "Lammens",
+   "fullName": "Senne Lammens",
+   "displayName": "Senne Lammens",
+   "shortName": "S. Lammens",
+   "weight": 192.0,
+   "displayWeight": "192 lbs",
+   "height": 76.0,
+   "displayHeight": "6' 4\"",
+   "age": 24,
+   "dateOfBirth": "2002-07-07T07:00Z",
+   "gender": "MALE",
+   "birthPlace": {},
+   "citizenship": "Belgium",
+   "citizenshipCountry": {
+    "alternateId": "4",
+    "abbreviation": "BEL"
+   },
+   "slug": "senne-lammens",
+   "jersey": "1",
+   "position": {
+    "id": "1",
+    "name": "Goalkeeper",
+    "displayName": "Goalkeeper",
+    "abbreviation": "G",
+    "leaf": false
+   },
+   "injuries": [],
+   "statistics": {
+    "splits": {
+     "id": "0",
+     "name": "Total",
+     "abbreviation": "Total",
+     "type": "total",
+     "categories": [
+      {
+       "name": "general",
+       "displayName": "General",
+       "shortDisplayName": "General",
+       "abbreviation": "gen",
+       "summary": "",
+       "stats": [
+        {
+         "name": "foulsCommitted",
+         "displayName": "Fouls Committed",
+         "shortDisplayName": "FC",
+         "description": "The number of fouls comitted by a player or team.",
+         "abbreviation": "FC",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "foulsSuffered",
+         "displayName": "Fouls Suffered",
+         "shortDisplayName": "FA",
+         "description": "The number of fouls suffered by a player or team.",
+         "abbreviation": "FA",
+         "value": 1.0,
+         "displayValue": "1"
+        },
+        {
+         "name": "redCards",
+         "displayName": "Red Cards",
+         "shortDisplayName": "RC",
+         "description": "The number of red cards that have been issued.",
+         "abbreviation": "RC",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "yellowCards",
+         "displayName": "Yellow Cards",
+         "shortDisplayName": "YC",
+         "description": "The number of yellow cards accumulated.",
+         "abbreviation": "YC",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "ownGoals",
+         "displayName": "Own Goals",
+         "shortDisplayName": "OG",
+         "description": "The number of own goals conceded.",
+         "abbreviation": "OG",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "appearances",
+         "displayName": "Appearances",
+         "shortDisplayName": "APP",
+         "description": "The number of times a player has made an appearance in a match.",
+         "abbreviation": "APP",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "subIns",
+         "displayName": "Substitute Appearances",
+         "shortDisplayName": "SUBIN",
+         "description": "The number of times a player has come on a sub in a match.",
+         "abbreviation": "SUB",
+         "value": 0.0,
+         "displayValue": "0"
+        }
+       ]
+      },
+      {
+       "name": "offensive",
+       "displayName": "Offensive",
+       "shortDisplayName": "Offensive",
+       "abbreviation": "off",
+       "summary": "",
+       "stats": [
+        {
+         "name": "goalAssists",
+         "displayName": "Assists",
+         "shortDisplayName": "A",
+         "description": "The number of assists.",
+         "abbreviation": "A",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "offsides",
+         "displayName": "Offsides",
+         "shortDisplayName": "OFF",
+         "description": "The number of times a player or team gets caught offside.",
+         "abbreviation": "OFF",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "shotsOnTarget",
+         "displayName": "Shots On Goal",
+         "shortDisplayName": "SOG",
+         "description": "The number of shots that are on goal.",
+         "abbreviation": "SOG",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "totalShots",
+         "displayName": "Shots",
+         "shortDisplayName": "SHOT",
+         "description": "The number of shots attempted.",
+         "abbreviation": "SHOT",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "totalGoals",
+         "displayName": "Total Goals",
+         "shortDisplayName": "G",
+         "description": "The number of goals scored against the opposing team.",
+         "abbreviation": "G",
+         "value": 0.0,
+         "displayValue": "0"
+        }
+       ]
+      },
+      {
+       "name": "goalKeeping",
+       "displayName": "Goal Keeping",
+       "shortDisplayName": "Goal Keeping",
+       "abbreviation": "gk",
+       "summary": "",
+       "stats": [
+        {
+         "name": "saves",
+         "displayName": "Saves",
+         "shortDisplayName": "SV",
+         "description": "The number of times a goalkeeper makes a save.",
+         "abbreviation": "SV",
+         "value": 32.0,
+         "displayValue": "32"
+        },
+        {
+         "name": "shotsFaced",
+         "displayName": "Shots Faced",
+         "shortDisplayName": "SHF",
+         "description": "The number of shots on target a goalkeeper has faced.",
+         "abbreviation": "SHF",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "goalsConceded",
+         "displayName": "Goals Against",
+         "shortDisplayName": "GA",
+         "description": "The number of goals allowed by the goalkeeper.",
+         "abbreviation": "GA",
+         "value": 19.0,
+         "displayValue": "19"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   "status": {
+    "id": "1",
+    "name": "Active",
+    "type": "active",
+    "abbreviation": "Active"
+   },
+   "profiled": false
+  },
+  {
+   "id": "325550",
+   "uid": "s:600~a:325550",
+   "guid": "c04b1850-2dcb-32d1-98ca-2b590cd2bd0f",
+   "firstName": "Dermot",
+   "lastName": "Mee",
+   "fullName": "Dermot Mee",
+   "displayName": "Dermot Mee",
+   "shortName": "D. Mee",
+   "height": 72.0,
+   "displayHeight": "6' 0\"",
+   "age": 23,
+   "dateOfBirth": "2002-11-20T08:00Z",
+   "gender": "MALE",
+   "birthPlace": {},
+   "citizenship": "Northern Ireland",
+   "citizenshipCountry": {
+    "alternateId": "362",
+    "abbreviation": "NIR"
+   },
+   "slug": "dermot-mee",
+   "jersey": "45",
+   "position": {
+    "id": "1",
+    "name": "Goalkeeper",
+    "displayName": "Goalkeeper",
+    "abbreviation": "G",
+    "leaf": false
+   },
+   "injuries": [],
+   "status": {
+    "id": "1",
+    "name": "Active",
+    "type": "active",
+    "abbreviation": "Active"
+   },
+   "profiled": false
+  }
+ ],
+ "coach": [
+  {
+   "id": "1",
+   "firstName": "Jose",
+   "lastName": "Mourinho"
+  },
+  {
+   "id": "30",
+   "firstName": "Sir Alex",
+   "lastName": "Ferguson"
+  },
+  {
+   "id": "99",
+   "firstName": "Louis",
+   "lastName": "van Gaal"
+  }
+ ],
+ "team": {
+  "id": "360",
+  "abbreviation": "MAN",
+  "location": "Manchester United",
+  "name": "Manchester United",
+  "displayName": "Manchester United",
+  "clubhouse": "https://www.espn.com/soccer/club/_/id/360/manchester-united",
+  "color": "da020e",
+  "recordSummary": "1-5-4",
+  "seasonSummary": "2026-27",
+  "standingSummary": "18th in English Premier League",
+  "isNational": false
+ }
+}

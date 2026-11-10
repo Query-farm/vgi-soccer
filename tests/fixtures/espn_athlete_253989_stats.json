@@ -1,0 +1,610 @@
+{
+ "filters": [
+  {
+   "displayName": "Team",
+   "name": "team",
+   "value": "382",
+   "options": [
+    {
+     "value": "124",
+     "displayValue": "Borussia Dortmund"
+    },
+    {
+     "value": "382",
+     "displayValue": "Manchester City"
+    },
+    {
+     "value": "2715",
+     "displayValue": "Molde"
+    },
+    {
+     "value": "464",
+     "displayValue": "Norway"
+    },
+    {
+     "value": "19232",
+     "displayValue": "Norway U19"
+    },
+    {
+     "value": "19966",
+     "displayValue": "Norway U20"
+    },
+    {
+     "value": "2790",
+     "displayValue": "RB Salzburg"
+    }
+   ]
+  },
+  {
+   "displayName": "League",
+   "name": "league",
+   "value": "eng.1",
+   "options": [
+    {
+     "value": "eng.league_cup",
+     "displayValue": "Carabao Cup"
+    },
+    {
+     "value": "eng.charity",
+     "displayValue": "Community Shield"
+    },
+    {
+     "value": "eng.fa",
+     "displayValue": "English FA Cup"
+    },
+    {
+     "value": "eng.1",
+     "displayValue": "Premier League"
+    },
+    {
+     "value": "fifa.cwc",
+     "displayValue": "Club World Cup"
+    },
+    {
+     "value": "jpn.world_challenge",
+     "displayValue": "J.League World Challenge"
+    },
+    {
+     "value": "uefa.champions",
+     "displayValue": "UEFA Champions League"
+    },
+    {
+     "value": "uefa.super_cup",
+     "displayValue": "UEFA Super Cup"
+    }
+   ]
+  }
+ ],
+ "teams": {
+  "eng.man_city": {
+   "id": "382",
+   "uid": "s:600~t:382",
+   "guid": "94fd5d7e-35b1-9d52-c9f2-4a37259bea36",
+   "slug": "eng.man_city",
+   "location": "Manchester City",
+   "name": "Manchester City",
+   "nickname": "Sky Blues",
+   "abbreviation": "MNC",
+   "displayName": "Manchester City",
+   "shortDisplayName": "Man City",
+   "color": "99c5ea",
+   "alternateColor": "000000",
+   "isActive": true,
+   "isAllStar": false,
+   "groups": {},
+   "coaches": {},
+   "venue": {
+    "id": "4036",
+    "fullName": "Etihad Stadium",
+    "shortName": "Etihad Stadium",
+    "address": {
+     "city": "Manchester",
+     "country": "England"
+    }
+   },
+   "record": {},
+   "defaultLeague": {
+    "id": "700",
+    "uid": "s:600~l:700",
+    "name": "English Premier League",
+    "displayName": "Premier League",
+    "abbreviation": "Premier League",
+    "slug": "eng.1",
+    "isTournament": false,
+    "season": {
+     "year": 2026,
+     "startDate": "2026-06-01T04:00:00.000+00:00",
+     "endDate": "2027-06-01T03:59:00.000+00:00",
+     "type": {
+      "id": "1",
+      "type": 14308,
+      "name": "2026-27 English Premier League",
+      "abbreviation": "2026-27 English Premier League",
+      "slug": "2026-27-english-premier-league",
+      "startDate": "2026-06-01T04:00:00.000+00:00",
+      "endDate": "2027-06-01T03:59:00.000+00:00",
+      "hasGroups": false,
+      "hasStandings": true,
+      "hasLegs": false
+     },
+     "types": {
+      "count": 1,
+      "pageIndex": 1,
+      "pageSize": 1,
+      "pageCount": 1,
+      "items": [
+       {
+        "id": "1",
+        "type": 14308,
+        "name": "2026-27 English Premier League",
+        "abbreviation": "2026-27 English Premier League",
+        "slug": "2026-27-english-premier-league",
+        "startDate": "2026-06-01T04:00:00.000+00:00",
+        "endDate": "2027-06-01T03:59:00.000+00:00",
+        "hasGroups": false,
+        "hasStandings": true,
+        "hasLegs": false
+       }
+      ]
+     },
+     "displayName": "2026-27 English Premier League",
+     "shortDisplayName": "2026-27 English Premier League",
+     "abbreviation": "2026-27"
+    },
+    "seasons": {},
+    "franchises": {},
+    "midsizeName": "ENG.1",
+    "shortName": "Premier League",
+    "events": {},
+    "gender": "MALE"
+   },
+   "isNational": false,
+   "athletes": {},
+   "franchise": {}
+  }
+ },
+ "leagues": {
+  "eng.1": {
+   "id": "700",
+   "uid": "s:600~l:700",
+   "name": "English Premier League",
+   "displayName": "Premier League",
+   "abbreviation": "Premier League",
+   "slug": "eng.1",
+   "isTournament": false,
+   "season": {
+    "year": 2026,
+    "startDate": "2026-06-01T04:00:00.000+00:00",
+    "endDate": "2027-06-01T03:59:00.000+00:00",
+    "type": {
+     "id": "1",
+     "type": 14308,
+     "name": "2026-27 English Premier League",
+     "abbreviation": "2026-27 English Premier League",
+     "slug": "2026-27-english-premier-league",
+     "startDate": "2026-06-01T04:00:00.000+00:00",
+     "endDate": "2027-06-01T03:59:00.000+00:00",
+     "hasGroups": false,
+     "hasStandings": true,
+     "hasLegs": false
+    },
+    "types": {
+     "count": 1,
+     "pageIndex": 1,
+     "pageSize": 1,
+     "pageCount": 1,
+     "items": [
+      {
+       "id": "1",
+       "type": 14308,
+       "name": "2026-27 English Premier League",
+       "abbreviation": "2026-27 English Premier League",
+       "slug": "2026-27-english-premier-league",
+       "startDate": "2026-06-01T04:00:00.000+00:00",
+       "endDate": "2027-06-01T03:59:00.000+00:00",
+       "hasGroups": false,
+       "hasStandings": true,
+       "hasLegs": false
+      }
+     ]
+    },
+    "displayName": "2026-27 English Premier League",
+    "shortDisplayName": "2026-27 English Premier League",
+    "abbreviation": "2026-27"
+   },
+   "seasons": {},
+   "franchises": {},
+   "midsizeName": "ENG.1",
+   "shortName": "Premier League",
+   "events": {},
+   "gender": "MALE"
+  }
+ },
+ "categories": [
+  {
+   "displayName": "offensive",
+   "labels": [
+    "STRT",
+    "FC",
+    "FA",
+    "YC",
+    "RC",
+    "G",
+    "A",
+    "SHOT",
+    "SOG",
+    "OFF"
+   ],
+   "names": [
+    "STRT",
+    "FC",
+    "FA",
+    "YC",
+    "RC",
+    "G",
+    "A",
+    "SHOT",
+    "SOG",
+    "OFF"
+   ],
+   "displayNames": [
+    "Starts",
+    "Fouls Committed",
+    "Fouls Suffered",
+    "Yellow Cards",
+    "Red Cards",
+    "Total Goals",
+    "Assists",
+    "Shots",
+    "Shots On Goal",
+    "Offsides"
+   ],
+   "descriptions": [
+    "The number of starts a player has made in matches.",
+    "The number of fouls comitted by a player or team.",
+    "The number of fouls suffered by a player or team.",
+    "The number of yellow cards accumulated.",
+    "The number of red cards that have been issued.",
+    "The number of goals scored against the opposing team.",
+    "The number of assists.",
+    "The number of shots attempted.",
+    "The number of shots that are on goal.",
+    "The number of times a player or team gets caught offside."
+   ],
+   "statistics": [
+    {
+     "teamId": "382",
+     "teamSlug": "eng.man_city",
+     "leagueId": "700",
+     "leagueSlug": "eng.1",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-06-01T04:00:00.000+00:00",
+      "endDate": "2027-06-01T03:59:00.000+00:00",
+      "type": {
+       "id": "1",
+       "type": 14308,
+       "name": "2026-27 English Premier League",
+       "abbreviation": "2026-27 English Premier League",
+       "slug": "2026-27-english-premier-league",
+       "startDate": "2026-06-01T04:00:00.000+00:00",
+       "endDate": "2027-06-01T03:59:00.000+00:00",
+       "hasGroups": false,
+       "hasStandings": true,
+       "hasLegs": false
+      },
+      "types": {
+       "count": 1,
+       "pageIndex": 1,
+       "pageSize": 1,
+       "pageCount": 1,
+       "items": [
+        {
+         "id": "1",
+         "type": 14308,
+         "name": "2026-27 English Premier League",
+         "abbreviation": "2026-27 English Premier League",
+         "slug": "2026-27-english-premier-league",
+         "startDate": "2026-06-01T04:00:00.000+00:00",
+         "endDate": "2027-06-01T03:59:00.000+00:00",
+         "hasGroups": false,
+         "hasStandings": true,
+         "hasLegs": false
+        }
+       ]
+      },
+      "displayName": "2026-27 English Premier League",
+      "shortDisplayName": "2026-27 English Premier League",
+      "abbreviation": "2026-27"
+     },
+     "stats": [
+      "10",
+      "6",
+      "7",
+      "0",
+      "0",
+      "9",
+      "0",
+      "38",
+      "18",
+      "1"
+     ]
+    },
+    {
+     "teamId": "382",
+     "teamSlug": "eng.man_city",
+     "leagueId": "700",
+     "leagueSlug": "eng.1",
+     "season": {
+      "year": 2025,
+      "startDate": "2025-06-01T04:00:00.000+00:00",
+      "endDate": "2026-06-01T03:59:00.000+00:00",
+      "type": {
+       "id": "1",
+       "type": 13481,
+       "name": "2025-26 English Premier League",
+       "abbreviation": "2025-26 English Premier League",
+       "slug": "2025-26-english-premier-league",
+       "startDate": "2025-06-01T04:00:00.000+00:00",
+       "endDate": "2026-06-01T03:59:00.000+00:00",
+       "hasGroups": false,
+       "hasStandings": true,
+       "hasLegs": false
+      },
+      "types": {
+       "count": 1,
+       "pageIndex": 1,
+       "pageSize": 1,
+       "pageCount": 1,
+       "items": [
+        {
+         "id": "1",
+         "type": 13481,
+         "name": "2025-26 English Premier League",
+         "abbreviation": "2025-26 English Premier League",
+         "slug": "2025-26-english-premier-league",
+         "startDate": "2025-06-01T04:00:00.000+00:00",
+         "endDate": "2026-06-01T03:59:00.000+00:00",
+         "hasGroups": false,
+         "hasStandings": true,
+         "hasLegs": false
+        }
+       ]
+      },
+      "displayName": "2025-26 English Premier League",
+      "shortDisplayName": "2025-26 English Premier League",
+      "abbreviation": "2025-26"
+     },
+     "stats": [
+      "34",
+      "24",
+      "25",
+      "2",
+      "0",
+      "27",
+      "8",
+      "126",
+      "59",
+      "5"
+     ]
+    },
+    {
+     "teamId": "382",
+     "teamSlug": "eng.man_city",
+     "leagueId": "700",
+     "leagueSlug": "eng.1",
+     "season": {
+      "year": 2024,
+      "startDate": "2024-06-01T04:00:00.000+00:00",
+      "endDate": "2025-06-01T03:59:00.000+00:00",
+      "type": {
+       "id": "1",
+       "type": 12654,
+       "name": "2024-25 English Premier League",
+       "abbreviation": "2024-25 English Premier League",
+       "slug": "2024-25-english-premier-league",
+       "startDate": "2024-06-01T04:00:00.000+00:00",
+       "endDate": "2025-06-01T03:59:00.000+00:00",
+       "hasGroups": false,
+       "hasStandings": true,
+       "hasLegs": false
+      },
+      "types": {
+       "count": 1,
+       "pageIndex": 1,
+       "pageSize": 1,
+       "pageCount": 1,
+       "items": [
+        {
+         "id": "1",
+         "type": 12654,
+         "name": "2024-25 English Premier League",
+         "abbreviation": "2024-25 English Premier League",
+         "slug": "2024-25-english-premier-league",
+         "startDate": "2024-06-01T04:00:00.000+00:00",
+         "endDate": "2025-06-01T03:59:00.000+00:00",
+         "hasGroups": false,
+         "hasStandings": true,
+         "hasLegs": false
+        }
+       ]
+      },
+      "displayName": "2024-25 English Premier League",
+      "shortDisplayName": "2024-25 English Premier League",
+      "abbreviation": "2024-25"
+     },
+     "stats": [
+      "31",
+      "23",
+      "13",
+      "2",
+      "0",
+      "22",
+      "3",
+      "109",
+      "57",
+      "3"
+     ]
+    },
+    {
+     "teamId": "382",
+     "teamSlug": "eng.man_city",
+     "leagueId": "700",
+     "leagueSlug": "eng.1",
+     "season": {
+      "year": 2023,
+      "startDate": "2023-06-01T04:00:00.000+00:00",
+      "endDate": "2024-06-01T03:59:00.000+00:00",
+      "type": {
+       "id": "1",
+       "type": 11864,
+       "name": "2023-24 English Premier League",
+       "abbreviation": "2023-24 English Premier League",
+       "slug": "2023-24-english-premier-league",
+       "startDate": "2023-06-01T04:00:00.000+00:00",
+       "endDate": "2024-06-01T03:59:00.000+00:00",
+       "hasGroups": false,
+       "hasStandings": true,
+       "hasLegs": false
+      },
+      "types": {
+       "count": 1,
+       "pageIndex": 1,
+       "pageSize": 1,
+       "pageCount": 1,
+       "items": [
+        {
+         "id": "1",
+         "type": 11864,
+         "name": "2023-24 English Premier League",
+         "abbreviation": "2023-24 English Premier League",
+         "slug": "2023-24-english-premier-league",
+         "startDate": "2023-06-01T04:00:00.000+00:00",
+         "endDate": "2024-06-01T03:59:00.000+00:00",
+         "hasGroups": false,
+         "hasStandings": true,
+         "hasLegs": false
+        }
+       ]
+      },
+      "displayName": "2023-24 English Premier League",
+      "shortDisplayName": "2023-24 English Premier League",
+      "abbreviation": "2023-24"
+     },
+     "stats": [
+      "29",
+      "18",
+      "31",
+      "1",
+      "0",
+      "27",
+      "5",
+      "115",
+      "54",
+      "1"
+     ]
+    },
+    {
+     "teamId": "382",
+     "teamSlug": "eng.man_city",
+     "leagueId": "700",
+     "leagueSlug": "eng.1",
+     "season": {
+      "year": 2022,
+      "startDate": "2022-06-01T04:00:00.000+00:00",
+      "endDate": "2023-06-01T03:59:00.000+00:00",
+      "type": {
+       "id": "1",
+       "type": 11127,
+       "name": "2022-23 English Premier League",
+       "abbreviation": "2022-23 English Premier League",
+       "slug": "2022-23-english-premier-league",
+       "startDate": "2022-06-01T04:00:00.000+00:00",
+       "endDate": "2023-06-01T03:59:00.000+00:00",
+       "hasGroups": false,
+       "hasStandings": true,
+       "hasLegs": false
+      },
+      "types": {
+       "count": 1,
+       "pageIndex": 1,
+       "pageSize": 1,
+       "pageCount": 1,
+       "items": [
+        {
+         "id": "1",
+         "type": 11127,
+         "name": "2022-23 English Premier League",
+         "abbreviation": "2022-23 English Premier League",
+         "slug": "2022-23-english-premier-league",
+         "startDate": "2022-06-01T04:00:00.000+00:00",
+         "endDate": "2023-06-01T03:59:00.000+00:00",
+         "hasGroups": false,
+         "hasStandings": true,
+         "hasLegs": false
+        }
+       ]
+      },
+      "displayName": "2022-23 English Premier League",
+      "shortDisplayName": "2022-23 English Premier League",
+      "abbreviation": "2022-23"
+     },
+     "stats": [
+      "33",
+      "31",
+      "24",
+      "5",
+      "0",
+      "36",
+      "8",
+      "125",
+      "60",
+      "6"
+     ]
+    }
+   ]
+  }
+ ],
+ "glossary": [
+  {
+   "abbreviation": "A",
+   "displayName": "Assists"
+  },
+  {
+   "abbreviation": "FA",
+   "displayName": "Fouls Suffered"
+  },
+  {
+   "abbreviation": "FC",
+   "displayName": "Fouls Committed"
+  },
+  {
+   "abbreviation": "G",
+   "displayName": "Total Goals"
+  },
+  {
+   "abbreviation": "OFF",
+   "displayName": "Offsides"
+  },
+  {
+   "abbreviation": "RC",
+   "displayName": "Red Cards"
+  },
+  {
+   "abbreviation": "SHOT",
+   "displayName": "Shots"
+  },
+  {
+   "abbreviation": "SOG",
+   "displayName": "Shots On Goal"
+  },
+  {
+   "abbreviation": "STRT",
+   "displayName": "Starts"
+  },
+  {
+   "abbreviation": "YC",
+   "displayName": "Yellow Cards"
+  }
+ ]
+}

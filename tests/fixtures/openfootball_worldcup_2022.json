@@ -1,0 +1,161 @@
+{
+ "name": "World Cup 2022",
+ "matches": [
+  {
+   "round": "Matchday 1",
+   "date": "2022-11-20",
+   "time": "19:00",
+   "team1": "Qatar",
+   "team2": "Ecuador",
+   "score": {
+    "ft": [
+     0,
+     2
+    ],
+    "ht": [
+     0,
+     2
+    ]
+   },
+   "goals1": [],
+   "goals2": [
+    {
+     "name": "Enner Valencia",
+     "minute": "16",
+     "penalty": true
+    },
+    {
+     "name": "Enner Valencia",
+     "minute": "31"
+    }
+   ],
+   "group": "Group A",
+   "ground": "Al Bayt Stadium, Al Khor"
+  },
+  {
+   "round": "Matchday 2",
+   "date": "2022-11-21",
+   "time": "19:00",
+   "team1": "Senegal",
+   "team2": "Netherlands",
+   "score": {
+    "ft": [
+     0,
+     2
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": [
+    {
+     "name": "Cody Gakpo",
+     "minute": "84"
+    },
+    {
+     "name": "Davy Klaassen",
+     "minute": "90+9"
+    }
+   ],
+   "group": "Group A",
+   "ground": "Al Thumama Stadium, Doha"
+  },
+  {
+   "round": "Round of 16",
+   "date": "2022-12-03",
+   "time": "18:00",
+   "team1": "Netherlands",
+   "team2": "USA",
+   "score": {
+    "ft": [
+     3,
+     1
+    ],
+    "ht": [
+     2,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Memphis Depay",
+     "minute": "10"
+    },
+    {
+     "name": "Daley Blind",
+     "minute": "45+1"
+    },
+    {
+     "name": "Denzel Dumfries",
+     "minute": "81"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Haji Wright",
+     "minute": "76"
+    }
+   ],
+   "ground": "Khalifa International Stadium, Al Rayyan"
+  },
+  {
+   "round": "Final",
+   "date": "2022-12-18",
+   "time": "18:00",
+   "team1": "Argentina",
+   "team2": "France",
+   "score": {
+    "p": [
+     4,
+     2
+    ],
+    "et": [
+     3,
+     3
+    ],
+    "ft": [
+     2,
+     2
+    ],
+    "ht": [
+     2,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Lionel Messi",
+     "minute": "23",
+     "penalty": true
+    },
+    {
+     "name": "Ángel Di María",
+     "minute": "36"
+    },
+    {
+     "name": "Lionel Messi",
+     "minute": "108"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Kylian Mbappé",
+     "minute": "80",
+     "penalty": true
+    },
+    {
+     "name": "Kylian Mbappé",
+     "minute": "81"
+    },
+    {
+     "name": "Kylian Mbappé",
+     "minute": "118",
+     "penalty": true
+    }
+   ],
+   "ground": "Lusail Iconic Stadium, Lusail"
+  }
+ ]
+}

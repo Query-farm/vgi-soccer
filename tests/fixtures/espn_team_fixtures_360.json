@@ -1,0 +1,243 @@
+{
+ "timestamp": "2026-11-10T17:48:27Z",
+ "status": "success",
+ "season": {
+  "year": 2026,
+  "type": 14308,
+  "name": "2026-27 English Premier League",
+  "displayName": "2026-27 English Premier League",
+  "half": 1
+ },
+ "team": {
+  "id": "360",
+  "abbreviation": "MAN",
+  "location": "Manchester United",
+  "name": "Manchester United",
+  "displayName": "Manchester United",
+  "clubhouse": "https://www.espn.com/soccer/club/_/id/360/manchester-united",
+  "color": "da020e",
+  "recordSummary": "1-5-4",
+  "seasonSummary": "2026-27",
+  "standingSummary": "18th in English Premier League",
+  "isNational": false,
+  "groups": {
+   "id": "1"
+  }
+ },
+ "events": [
+  {
+   "id": "401878755",
+   "date": "2026-11-22T16:30Z",
+   "name": "Manchester United at Liverpool",
+   "shortName": "MAN @ LIV",
+   "season": {
+    "year": 2026,
+    "displayName": "2026-27 English Premier League"
+   },
+   "seasonType": {
+    "id": "1",
+    "type": 14308,
+    "name": "2026-27 English Premier League",
+    "abbreviation": "2026-27 English Premier League"
+   },
+   "timeValid": true,
+   "competitions": [
+    {
+     "id": "401878755",
+     "date": "2026-11-22T16:30Z",
+     "attendance": 0,
+     "timeValid": true,
+     "neutralSite": false,
+     "boxscoreAvailable": true,
+     "ticketsAvailable": true,
+     "venue": {
+      "fullName": "Anfield",
+      "address": {
+       "city": "Liverpool",
+       "country": "England"
+      }
+     },
+     "competitors": [
+      {
+       "id": "364",
+       "type": "team",
+       "order": 0,
+       "homeAway": "home",
+       "winner": false,
+       "team": {
+        "id": "364",
+        "location": "Liverpool",
+        "nickname": "Reds",
+        "abbreviation": "LIV",
+        "displayName": "Liverpool",
+        "shortDisplayName": "Liverpool"
+       }
+      },
+      {
+       "id": "360",
+       "type": "team",
+       "order": 1,
+       "homeAway": "away",
+       "winner": false,
+       "team": {
+        "id": "360",
+        "location": "Manchester United",
+        "nickname": "Red Devils",
+        "abbreviation": "MAN",
+        "displayName": "Manchester United",
+        "shortDisplayName": "Man Utd"
+       }
+      }
+     ],
+     "notes": [],
+     "tickets": [
+      {
+       "id": "7188613",
+       "summary": "Tickets as low as $458",
+       "description": "Liverpool vs Manchester United",
+       "maxPrice": 10040.0,
+       "startingPrice": 458.0,
+       "numberAvailable": 5182,
+       "totalPostings": 1208
+      }
+     ],
+     "status": {
+      "clock": 0.0,
+      "addedClock": 0.0,
+      "displayClock": "0'",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Sun, November 22nd at 11:30 AM EST",
+       "shortDetail": "11/22 - 11:30 AM EST"
+      }
+     }
+    }
+   ],
+   "league": {
+    "id": "700",
+    "alternateId": "23",
+    "name": "English Premier League",
+    "abbreviation": "Premier League",
+    "shortName": "Premier League",
+    "midsizeName": "ENG.1",
+    "slug": "eng.1",
+    "isTournament": false
+   }
+  },
+  {
+   "id": "401879226",
+   "date": "2026-11-28T15:00Z",
+   "name": "Brentford at Manchester United",
+   "shortName": "BRE @ MAN",
+   "season": {
+    "year": 2026,
+    "displayName": "2026-27 English Premier League"
+   },
+   "seasonType": {
+    "id": "1",
+    "type": 14308,
+    "name": "2026-27 English Premier League",
+    "abbreviation": "2026-27 English Premier League"
+   },
+   "timeValid": true,
+   "competitions": [
+    {
+     "id": "401879226",
+     "date": "2026-11-28T15:00Z",
+     "attendance": 0,
+     "timeValid": true,
+     "neutralSite": false,
+     "boxscoreAvailable": true,
+     "ticketsAvailable": true,
+     "venue": {
+      "fullName": "Old Trafford",
+      "address": {
+       "city": "Manchester",
+       "country": "England"
+      }
+     },
+     "competitors": [
+      {
+       "id": "360",
+       "type": "team",
+       "order": 0,
+       "homeAway": "home",
+       "winner": false,
+       "team": {
+        "id": "360",
+        "location": "Manchester United",
+        "nickname": "Red Devils",
+        "abbreviation": "MAN",
+        "displayName": "Manchester United",
+        "shortDisplayName": "Man Utd"
+       }
+      },
+      {
+       "id": "337",
+       "type": "team",
+       "order": 1,
+       "homeAway": "away",
+       "winner": false,
+       "team": {
+        "id": "337",
+        "location": "Brentford",
+        "nickname": "Brentford",
+        "abbreviation": "BRE",
+        "displayName": "Brentford",
+        "shortDisplayName": "Brentford"
+       }
+      }
+     ],
+     "notes": [],
+     "tickets": [
+      {
+       "id": "7188631",
+       "summary": "Tickets as low as $166",
+       "description": "Manchester United vs Brentford",
+       "maxPrice": 8687.0,
+       "startingPrice": 166.0,
+       "numberAvailable": 11647,
+       "totalPostings": 2966
+      }
+     ],
+     "status": {
+      "clock": 0.0,
+      "addedClock": 0.0,
+      "displayClock": "0'",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Sat, November 28th at 10:00 AM EST",
+       "shortDetail": "11/28 - 10:00 AM EST"
+      }
+     }
+    }
+   ],
+   "league": {
+    "id": "700",
+    "alternateId": "23",
+    "name": "English Premier League",
+    "abbreviation": "Premier League",
+    "shortName": "Premier League",
+    "midsizeName": "ENG.1",
+    "slug": "eng.1",
+    "isTournament": false
+   }
+  }
+ ],
+ "requestedSeason": {
+  "year": 2026,
+  "type": 14308,
+  "name": "2026-27 English Premier League",
+  "displayName": "2026-27 English Premier League"
+ }
+}

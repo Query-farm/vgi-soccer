@@ -1,0 +1,1123 @@
+{
+ "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays?source=38&lang=en&region=us",
+ "count": 1441,
+ "pageIndex": 1,
+ "pageSize": 1000,
+ "pageCount": 2,
+ "items": [
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55091859?lang=en&region=us",
+   "id": "55091859",
+   "type": {
+    "id": "80",
+    "text": "Kickoff",
+    "type": "kickoff"
+   },
+   "text": "First Half begins.",
+   "alternativeText": "First Half begins.",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1
+   },
+   "clock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "valid": true,
+   "scoringPlay": false,
+   "priority": false,
+   "scoreValue": 0,
+   "modified": "2026-11-08T18:34Z",
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T16:31:55Z",
+   "statYardage": 0,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": false,
+   "modifiedDate": "2026-11-08T18:34Z"
+  },
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55091880?lang=en&region=us",
+   "id": "55091880",
+   "type": {
+    "id": "118",
+    "text": "Pass",
+    "type": "pass"
+   },
+   "text": "Nicolas Jackson (Aston Villa) Pass at 0'",
+   "shortText": "Nicolas Jackson Pass",
+   "alternativeText": "Nicolas Jackson (Aston Villa) Pass at 0'",
+   "shortAlternativeText": "Nicolas Jackson Pass",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1
+   },
+   "clock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "valid": true,
+   "scoringPlay": false,
+   "priority": false,
+   "scoreValue": 0,
+   "modified": "2026-11-08T16:33Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "11",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/308524?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/19?lang=en&region=us"
+     },
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/competitors/362/roster/308524/statistics/0?lang=en&region=us"
+     },
+     "order": 1,
+     "type": "passer"
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T16:31:55Z",
+   "statYardage": 0,
+   "possessionId": 1,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": false,
+   "modifiedDate": "2026-11-08T16:33Z",
+   "fieldPositionX": 49.8,
+   "fieldPositionY": 49.8,
+   "fieldPosition2X": 19.8,
+   "fieldPosition2Y": 53.0
+  },
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55091881?lang=en&region=us",
+   "id": "55091881",
+   "type": {
+    "id": "118",
+    "text": "Pass",
+    "type": "pass"
+   },
+   "text": "Zion Suzuki (Aston Villa) Pass at 1'",
+   "shortText": "Zion Suzuki Pass",
+   "alternativeText": "Zion Suzuki (Aston Villa) Pass at 1'",
+   "shortAlternativeText": "Zion Suzuki Pass",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1
+   },
+   "clock": {
+    "value": 3.0,
+    "displayValue": "1'"
+   },
+   "valid": true,
+   "scoringPlay": false,
+   "priority": false,
+   "scoreValue": 0,
+   "modified": "2026-11-08T16:33Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "1",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/265958?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/1?lang=en&region=us"
+     },
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/competitors/362/roster/265958/statistics/0?lang=en&region=us"
+     },
+     "order": 1,
+     "type": "passer"
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T16:31:59Z",
+   "statYardage": 0,
+   "possessionId": 1,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": false,
+   "modifiedDate": "2026-11-08T16:33Z",
+   "fieldPositionX": 19.8,
+   "fieldPositionY": 52.6,
+   "fieldPosition2X": 23.8,
+   "fieldPosition2Y": 67.7
+  },
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55091883?lang=en&region=us",
+   "id": "55091883",
+   "type": {
+    "id": "118",
+    "text": "Pass",
+    "type": "pass"
+   },
+   "text": "Pau Torres (Aston Villa) Pass at 1'",
+   "shortText": "Pau Torres Pass",
+   "alternativeText": "Pau Torres (Aston Villa) Pass at 1'",
+   "shortAlternativeText": "Pau Torres Pass",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1
+   },
+   "clock": {
+    "value": 7.0,
+    "displayValue": "1'"
+   },
+   "valid": true,
+   "scoringPlay": false,
+   "priority": false,
+   "scoreValue": 0,
+   "modified": "2026-11-08T16:33Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "14",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/251100?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/4?lang=en&region=us"
+     },
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/competitors/362/roster/251100/statistics/0?lang=en&region=us"
+     },
+     "order": 1,
+     "type": "passer"
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T16:32:02Z",
+   "statYardage": 0,
+   "possessionId": 1,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": false,
+   "modifiedDate": "2026-11-08T16:33Z",
+   "fieldPositionX": 23.8,
+   "fieldPositionY": 67.3,
+   "fieldPosition2X": 18.2,
+   "fieldPosition2Y": 47.0
+  },
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55091884?lang=en&region=us",
+   "id": "55091884",
+   "type": {
+    "id": "118",
+    "text": "Pass",
+    "type": "pass"
+   },
+   "text": "Zion Suzuki (Aston Villa) Pass at 1'",
+   "shortText": "Zion Suzuki Pass",
+   "alternativeText": "Zion Suzuki (Aston Villa) Pass at 1'",
+   "shortAlternativeText": "Zion Suzuki Pass",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1
+   },
+   "clock": {
+    "value": 12.0,
+    "displayValue": "1'"
+   },
+   "valid": true,
+   "scoringPlay": false,
+   "priority": false,
+   "scoreValue": 0,
+   "modified": "2026-11-08T16:33Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "1",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/265958?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/1?lang=en&region=us"
+     },
+     "order": 1,
+     "type": "passer"
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T16:32:08Z",
+   "statYardage": 0,
+   "possessionId": 1,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": false,
+   "modifiedDate": "2026-11-08T16:33Z",
+   "fieldPositionX": 15.7,
+   "fieldPositionY": 46.4,
+   "fieldPosition2X": 15.9,
+   "fieldPosition2Y": 20.1
+  },
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55091885?lang=en&region=us",
+   "id": "55091885",
+   "type": {
+    "id": "118",
+    "text": "Pass",
+    "type": "pass"
+   },
+   "text": "Victor Lindelöf (Aston Villa) Pass at 1'",
+   "shortText": "Victor Lindelöf Pass",
+   "alternativeText": "Victor Lindelöf (Aston Villa) Pass at 1'",
+   "shortAlternativeText": "Victor Lindelöf Pass",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1
+   },
+   "clock": {
+    "value": 16.0,
+    "displayValue": "1'"
+   },
+   "valid": true,
+   "scoringPlay": false,
+   "priority": false,
+   "scoreValue": 0,
+   "modified": "2026-11-08T16:33Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "3",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/204679?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/5?lang=en&region=us"
+     },
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/competitors/362/roster/204679/statistics/0?lang=en&region=us"
+     },
+     "order": 1,
+     "type": "passer"
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T16:32:12Z",
+   "statYardage": 0,
+   "possessionId": 1,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": false,
+   "modifiedDate": "2026-11-08T16:33Z",
+   "fieldPositionX": 15.7,
+   "fieldPositionY": 19.8,
+   "fieldPosition2X": 7.1,
+   "fieldPosition2Y": 47.0
+  },
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55091886?lang=en&region=us",
+   "id": "55091886",
+   "type": {
+    "id": "118",
+    "text": "Pass",
+    "type": "pass"
+   },
+   "text": "Zion Suzuki (Aston Villa) Pass at 1'",
+   "shortText": "Zion Suzuki Pass",
+   "alternativeText": "Zion Suzuki (Aston Villa) Pass at 1'",
+   "shortAlternativeText": "Zion Suzuki Pass",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1
+   },
+   "clock": {
+    "value": 19.0,
+    "displayValue": "1'"
+   },
+   "valid": true,
+   "scoringPlay": false,
+   "priority": false,
+   "scoreValue": 0,
+   "modified": "2026-11-08T16:33Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "1",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/265958?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/1?lang=en&region=us"
+     },
+     "order": 1,
+     "type": "passer"
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T16:32:14Z",
+   "statYardage": 0,
+   "possessionId": 1,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": false,
+   "modifiedDate": "2026-11-08T16:33Z",
+   "fieldPositionX": 3.6,
+   "fieldPositionY": 51.1,
+   "fieldPosition2X": 11.8,
+   "fieldPosition2Y": 79.4
+  },
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55091887?lang=en&region=us",
+   "id": "55091887",
+   "type": {
+    "id": "118",
+    "text": "Pass",
+    "type": "pass"
+   },
+   "text": "Pau Torres (Aston Villa) Pass at 1'",
+   "shortText": "Pau Torres Pass",
+   "alternativeText": "Pau Torres (Aston Villa) Pass at 1'",
+   "shortAlternativeText": "Pau Torres Pass",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1
+   },
+   "clock": {
+    "value": 23.0,
+    "displayValue": "1'"
+   },
+   "valid": true,
+   "scoringPlay": false,
+   "priority": false,
+   "scoreValue": 0,
+   "modified": "2026-11-08T16:33Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "14",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/251100?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/4?lang=en&region=us"
+     },
+     "order": 1,
+     "type": "passer"
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T16:32:18Z",
+   "statYardage": 0,
+   "possessionId": 1,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": false,
+   "modifiedDate": "2026-11-08T16:33Z",
+   "fieldPositionX": 19.3,
+   "fieldPositionY": 87.6,
+   "fieldPosition2X": 42.8,
+   "fieldPosition2Y": 69.1
+  },
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55092046?lang=en&region=us",
+   "id": "55092046",
+   "type": {
+    "id": "70",
+    "text": "Goal",
+    "type": "goal"
+   },
+   "text": "Goal! Manchester United 0, Aston Villa 1. Alysson (Aston Villa) left footed shot from the right side of the box to the centre of the goal. Assisted by John McGinn.",
+   "shortText": "Alysson Goal",
+   "alternativeText": "Goal! Manchester United 0, Aston Villa 1. Alysson (Aston Villa) left footed shot from the right side of the box to the centre of the goal. Assisted by John McGinn.",
+   "shortAlternativeText": "Alysson Goal",
+   "awayScore": 1,
+   "homeScore": 0,
+   "period": {
+    "number": 1
+   },
+   "clock": {
+    "value": 59.0,
+    "displayValue": "1'"
+   },
+   "valid": true,
+   "scoringPlay": true,
+   "priority": true,
+   "scoreValue": 1,
+   "modified": "2026-11-08T18:34Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "47",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/382839?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/33?lang=en&region=us"
+     },
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/competitors/362/roster/382839/statistics/0?lang=en&region=us"
+     },
+     "order": 1,
+     "type": "scorer"
+    },
+    {
+     "jersey": "7",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/162843?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/14?lang=en&region=us"
+     },
+     "order": 2,
+     "type": "assister"
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T16:32:54Z",
+   "contactType": {
+    "id": "9",
+    "text": "Left Foot"
+   },
+   "shotInfo": {
+    "id": "22",
+    "text": "Regular Play",
+    "description": "Shot during open play as opposed to from a set play. Note: Fast Breaks are not included."
+   },
+   "targetZone": {
+    "id": "78",
+    "text": "Low Centre",
+    "description": "Low Centre"
+   },
+   "statYardage": 16,
+   "possessionId": 1,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": true,
+   "modifiedDate": "2026-11-08T18:34Z",
+   "goalPositionY": 48.4,
+   "goalPositionZ": 10.8,
+   "fieldPositionX": 90.8,
+   "fieldPositionY": 34.2,
+   "fieldPosition2X": 100.0,
+   "fieldPosition2Y": 48.4,
+   "expectedGoals": 0.04,
+   "expectedGoalsOnTarget": 0.048
+  },
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55092447?lang=en&region=us",
+   "id": "55092447",
+   "type": {
+    "id": "106",
+    "text": "Shot On Target",
+    "type": "shot-on-target"
+   },
+   "text": "Attempt saved. Alysson (Aston Villa) left footed shot from the right side of the box is saved in the bottom right corner by Senne Lammens (Manchester United). Assisted by Taylor Harwood-Bellis.",
+   "shortText": "Alysson Shot On Target",
+   "alternativeText": "Attempt saved. Alysson (Aston Villa) left footed shot from the right side of the box is saved in the bottom right corner by Senne Lammens (Manchester United). Assisted by Taylor Harwood-Bellis.",
+   "shortAlternativeText": "Alysson Shot On Target",
+   "awayScore": 1,
+   "homeScore": 0,
+   "period": {
+    "number": 1
+   },
+   "clock": {
+    "value": 219.0,
+    "displayValue": "4'"
+   },
+   "valid": true,
+   "scoringPlay": false,
+   "priority": true,
+   "scoreValue": 0,
+   "modified": "2026-11-08T18:34Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "47",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/382839?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/33?lang=en&region=us"
+     },
+     "order": 1,
+     "type": "shooter"
+    },
+    {
+     "jersey": "4",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/281121?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/9?lang=en&region=us"
+     },
+     "order": 2
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T16:35:34Z",
+   "contactType": {
+    "id": "9",
+    "text": "Left Foot"
+   },
+   "shotInfo": {
+    "id": "24",
+    "text": "Set Piece",
+    "description": "Shot occurred from a crossed free kick, that can be an indirect or direct free kick. Please note that a first time shot following the Tap pass will be set to Free kick rather than Set piece"
+   },
+   "targetZone": {
+    "id": "80",
+    "text": "Low Right",
+    "description": "Low Right"
+   },
+   "statYardage": 21,
+   "possessionId": 3,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": true,
+   "modifiedDate": "2026-11-08T18:34Z",
+   "goalPositionY": 47.4,
+   "goalPositionZ": 4.4,
+   "fieldPositionX": 83.5,
+   "fieldPositionY": 36.6,
+   "fieldPosition2X": 98.4,
+   "fieldPosition2Y": 47.8,
+   "expectedGoals": 0.046,
+   "expectedGoalsOnTarget": 0.071
+  },
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55092452?lang=en&region=us",
+   "id": "55092452",
+   "type": {
+    "id": "70",
+    "text": "Goal",
+    "type": "goal"
+   },
+   "text": "Goal! Manchester United 0, Aston Villa 2. Nicolas Jackson (Aston Villa) right footed shot from very close range to the centre of the goal following a set piece situation.",
+   "shortText": "Nicolas Jackson Goal",
+   "alternativeText": "Goal! Manchester United 0, Aston Villa 2. Nicolas Jackson (Aston Villa) right footed shot from very close range to the centre of the goal following a set piece situation.",
+   "shortAlternativeText": "Nicolas Jackson Goal",
+   "awayScore": 2,
+   "homeScore": 0,
+   "period": {
+    "number": 1
+   },
+   "clock": {
+    "value": 220.0,
+    "displayValue": "4'"
+   },
+   "valid": true,
+   "scoringPlay": true,
+   "priority": true,
+   "scoreValue": 1,
+   "modified": "2026-11-08T18:34Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "11",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/308524?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/19?lang=en&region=us"
+     },
+     "order": 1,
+     "type": "scorer"
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T16:35:35Z",
+   "contactType": {
+    "id": "8",
+    "text": "Right Foot"
+   },
+   "shotInfo": {
+    "id": "24",
+    "text": "Set Piece",
+    "description": "Shot occurred from a crossed free kick, that can be an indirect or direct free kick. Please note that a first time shot following the Tap pass will be set to Free kick rather than Set piece"
+   },
+   "targetZone": {
+    "id": "78",
+    "text": "Low Centre",
+    "description": "Low Centre"
+   },
+   "statYardage": 3,
+   "possessionId": 3,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": true,
+   "modifiedDate": "2026-11-08T18:34Z",
+   "goalPositionY": 50.4,
+   "goalPositionZ": 8.9,
+   "fieldPositionX": 97.3,
+   "fieldPositionY": 48.7,
+   "fieldPosition2X": 100.0,
+   "fieldPosition2Y": 50.4,
+   "expectedGoals": 0.883,
+   "expectedGoalsOnTarget": 0.848
+  },
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55092880?lang=en&region=us",
+   "id": "55092880",
+   "type": {
+    "id": "135",
+    "text": "Shot Blocked",
+    "type": "shot-blocked"
+   },
+   "text": "Attempt blocked. Boubacar Kamara (Aston Villa) right footed shot from a difficult angle on the right is blocked. Assisted by Johan Manzambi.",
+   "shortText": "Boubacar Kamara Shot Blocked",
+   "alternativeText": "Attempt blocked. Boubacar Kamara (Aston Villa) right footed shot from a difficult angle on the right is blocked. Assisted by Johan Manzambi.",
+   "shortAlternativeText": "Boubacar Kamara Shot Blocked",
+   "awayScore": 2,
+   "homeScore": 0,
+   "period": {
+    "number": 1
+   },
+   "clock": {
+    "value": 386.0,
+    "displayValue": "7'"
+   },
+   "valid": true,
+   "scoringPlay": false,
+   "priority": true,
+   "scoreValue": 0,
+   "modified": "2026-11-08T18:34Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "8",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/250936?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/17?lang=en&region=us"
+     },
+     "order": 1,
+     "type": "shooter"
+    },
+    {
+     "jersey": "44",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/386992?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/362?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/32?lang=en&region=us"
+     },
+     "order": 2
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T16:38:21Z",
+   "contactType": {
+    "id": "8",
+    "text": "Right Foot"
+   },
+   "shotInfo": {
+    "id": "22",
+    "text": "Regular Play",
+    "description": "Shot during open play as opposed to from a set play. Note: Fast Breaks are not included."
+   },
+   "targetZone": {
+    "id": "80",
+    "text": "Low Right",
+    "description": "Low Right"
+   },
+   "statYardage": 15,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": true,
+   "modifiedDate": "2026-11-08T18:34Z",
+   "goalPositionY": 48.1,
+   "goalPositionZ": 19.0,
+   "fieldPositionX": 96.0,
+   "fieldPositionY": 31.0,
+   "fieldPosition2X": 97.1,
+   "fieldPosition2Y": 35.6,
+   "expectedGoals": 0.043,
+   "expectedGoalsOnTarget": 0.0
+  },
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55093652?lang=en&region=us",
+   "id": "55093652",
+   "type": {
+    "id": "117",
+    "text": "Shot Off Target",
+    "type": "shot-off-target"
+   },
+   "text": "Attempt missed. Bruno Fernandes (Manchester United) right footed shot from outside the box is close, but misses to the left. Assisted by Youri Tielemans.",
+   "shortText": "Bruno Fernandes Shot Off Target",
+   "alternativeText": "Attempt missed. Bruno Fernandes (Manchester United) right footed shot from outside the box is close, but misses to the left. Assisted by Youri Tielemans.",
+   "shortAlternativeText": "Bruno Fernandes Shot Off Target",
+   "awayScore": 2,
+   "homeScore": 0,
+   "period": {
+    "number": 1
+   },
+   "clock": {
+    "value": 594.0,
+    "displayValue": "10'"
+   },
+   "valid": true,
+   "scoringPlay": false,
+   "priority": true,
+   "scoreValue": 0,
+   "modified": "2026-11-08T18:34Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/360?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "8",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/124091?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/360?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/14?lang=en&region=us"
+     },
+     "order": 1,
+     "type": "shooter"
+    },
+    {
+     "jersey": "18",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/193297?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/360?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/17?lang=en&region=us"
+     },
+     "order": 2
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T16:41:49Z",
+   "contactType": {
+    "id": "8",
+    "text": "Right Foot"
+   },
+   "shotInfo": {
+    "id": "22",
+    "text": "Regular Play",
+    "description": "Shot during open play as opposed to from a set play. Note: Fast Breaks are not included."
+   },
+   "targetZone": {
+    "id": "83",
+    "text": "Close Left",
+    "description": "Close Left"
+   },
+   "statYardage": 23,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": false,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": true,
+   "modifiedDate": "2026-11-08T18:34Z",
+   "goalPositionY": 58.3,
+   "goalPositionZ": 1.4,
+   "fieldPositionX": 80.6,
+   "fieldPositionY": 56.0,
+   "fieldPosition2X": 100.0,
+   "fieldPosition2Y": 58.3,
+   "expectedGoals": 0.05,
+   "expectedGoalsOnTarget": 0.0
+  },
+  {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/events/401879240/competitions/401879240/plays/55094567?lang=en&region=us",
+   "id": "55094567",
+   "type": {
+    "id": "98",
+    "text": "Penalty - Scored",
+    "type": "penalty---scored"
+   },
+   "text": "Goal! Manchester United 1, Aston Villa 2. Bruno Fernandes (Manchester United) converts the penalty with a right footed shot to the centre of the goal.",
+   "shortText": "Bruno Fernandes Penalty - Scored",
+   "alternativeText": "Goal! Manchester United 1, Aston Villa 2. Bruno Fernandes (Manchester United) converts the penalty with a right footed shot to the centre of the goal.",
+   "shortAlternativeText": "Bruno Fernandes Penalty - Scored",
+   "awayScore": 2,
+   "homeScore": 1,
+   "period": {
+    "number": 1
+   },
+   "clock": {
+    "value": 909.0,
+    "displayValue": "16'"
+   },
+   "valid": true,
+   "scoringPlay": true,
+   "priority": true,
+   "scoreValue": 1,
+   "modified": "2026-11-08T18:34Z",
+   "team": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/360?lang=en&region=us"
+   },
+   "participants": [
+    {
+     "jersey": "8",
+     "athlete": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/athletes/124091?lang=en&region=us"
+     },
+     "team": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/seasons/2026/teams/360?lang=en&region=us"
+     },
+     "position": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/all/positions/14?lang=en&region=us"
+     },
+     "order": 1,
+     "type": "scorer"
+    }
+   ],
+   "source": {
+    "id": "38",
+    "description": "SA.ENVOY"
+   },
+   "substitution": false,
+   "wallclock": "2026-11-08T16:47:04Z",
+   "contactType": {
+    "id": "8",
+    "text": "Right Foot"
+   },
+   "shotInfo": {
+    "id": "9",
+    "text": "Penalty",
+    "description": "Indicates that a penalty has been taken (an attempt on goal was a penalty kick) or that a penalty has been awarded"
+   },
+   "targetZone": {
+    "id": "78",
+    "text": "Low Centre",
+    "description": "Low Centre"
+   },
+   "statYardage": 13,
+   "possessionId": 20,
+   "addedClock": {
+    "value": 0.0,
+    "displayValue": ""
+   },
+   "redCard": false,
+   "yellowCard": false,
+   "penaltyKick": true,
+   "ownGoal": false,
+   "shootout": false,
+   "hasVideoTagging": true,
+   "modifiedDate": "2026-11-08T18:34Z",
+   "goalPositionY": 48.7,
+   "goalPositionZ": 5.7,
+   "fieldPositionX": 88.5,
+   "fieldPositionY": 50.0,
+   "fieldPosition2X": 100.0,
+   "fieldPosition2Y": 48.7,
+   "expectedGoals": 0.788,
+   "expectedGoalsOnTarget": 0.759
+  }
+ ]
+}

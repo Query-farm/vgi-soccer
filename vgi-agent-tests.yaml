@@ -1,0 +1,120 @@
+# Private graders for the public vgi.agent_test_tasks prompts.
+#
+# Every task grades with check_sql, never reference_sql. Several tasks read live
+# data (current tables, today's scores) that moves between the analyst's run and
+# a reference run, and even the historical tasks come from upstreams the analyst
+# may legitimately shape differently (extra columns, other orderings), so an
+# exact result-set compare is the wrong oracle. Each check_sql asserts the
+# specific ground truth the prompt asks about, through the objects the analyst
+# is expected to use; together they exercise every public table and function.
+
+tasks:
+  - name: leicester_title
+    check_sql: >-
+      SELECT
+        (SELECT bool_and(team_name = 'Leicester City' AND points = 81)
+           FROM soccer.main.standings(league := 'eng.1', season := 2015) WHERE rank = 1)
+        AND
+        (SELECT bool_and(player_name = 'Harry Kane' AND goals = 25)
+           FROM soccer.main.stat_leaders(league := 'eng.1', season := 2015)
+           WHERE category = 'goals' AND rank = 1)
+    success_criteria: >-
+      Uses standings and stat_leaders for eng.1 season 2015 (the start year): Leicester City on
+      81 points, Harry Kane top scorer with 25.
+
+  - name: big_five_leaders
+    check_sql: >-
+      SELECT
+        (SELECT count(DISTINCT league_slug) = 5 FROM soccer.main.current_standings WHERE rank = 1)
+        AND
+        (SELECT count(DISTINCT league_slug) = 5 AND bool_and(goals > 0)
+           FROM soccer.main.current_stat_leaders WHERE category = 'goals' AND rank = 1)
+    success_criteria: >-
+      Uses current_standings and current_stat_leaders and returns one leader and one top
+      scorer per big-five league.
+
+  - name: todays_matches
+    # Today may legitimately have no matches; the invariant is that every match
+    # resolves to a competition in the league directory.
+    check_sql: >-
+      SELECT count(*) = count(l.league_slug)
+      FROM soccer.main.current_matches s
+      LEFT JOIN soccer.main.leagues l USING (league_slug)
+    success_criteria: >-
+      Uses current_matches grouped by league, optionally joined to leagues for names.
+
+  - name: match_report
+    check_sql: >-
+      SELECT
+        (SELECT bool_and(home_score = 4 AND away_score = 4)
+           FROM soccer.main.scoreboard(league := 'eng.1', match_date := DATE '2026-11-08')
+           WHERE event_id = 401879240)
+        AND (SELECT count(*) = 8 FROM soccer.main.match_key_events(401879240) WHERE scoring_play)
+        AND (SELECT bool_and(home_team_name = 'Manchester United')
+               FROM soccer.main.match_summary(401879240))
+        AND (SELECT count(*) > 0 FROM soccer.main.match_commentary(401879240)
+               WHERE play_type = 'goal' AND text LIKE '%Alysson%')
+    success_criteria: >-
+      Finds event 401879240 via scoreboard on 2026-11-08, reports 4-4, lists eight goals from
+      match_key_events, and quotes Alysson's opening goal from match_commentary.
+
+  - name: match_box_score
+    check_sql: >-
+      SELECT
+        (SELECT bool_and(possession_pct = 55.7 AND shots = 26)
+           FROM soccer.main.match_team_stats(401879240) WHERE home_away = 'home')
+        AND (SELECT sum(goals) = 8 FROM soccer.main.match_player_stats(401879240))
+        AND (SELECT count(DISTINCT team_id) = 2
+               FROM soccer.main.match_plays(401879240) WHERE expected_goals > 0)
+    success_criteria: >-
+      Uses match_team_stats for possession and shots, sums expected_goals from match_plays by
+      team, and lists scorers from match_player_stats.
+
+  - name: arsenal_season
+    check_sql: >-
+      SELECT count(*) = 38
+      FROM soccer.main.schedule(league := 'eng.1', season := 2025)
+      WHERE 'Arsenal' IN (home_team_name, away_team_name)
+    success_criteria: >-
+      Uses schedule for eng.1 season 2025 filtered to Arsenal and returns 38 matches.
+
+  - name: squad_and_scorer
+    check_sql: >-
+      SELECT
+        (SELECT count(*) > 0 FROM soccer.main.roster(382, league := 'eng.1')
+           WHERE position_abbreviation = 'F')
+        AND (SELECT bool_or(season = 2022 AND goals = 36)
+               FROM soccer.main.player_stats(253989, league := 'eng.1'))
+    success_criteria: >-
+      Filters roster(382) to forwards and reports Haaland's goals per season from player_stats,
+      including 36 in 2022-23.
+
+  - name: united_fixtures
+    check_sql: >-
+      SELECT
+        (SELECT count(*) = 1 FROM soccer.main.teams(league := 'eng.1')
+           WHERE team_id = 360 AND team_name = 'Manchester United')
+        AND (SELECT count(*) > 0 FROM soccer.main.team_schedule(360, league := 'eng.1'))
+    success_criteria: >-
+      Finds team_id 360 in teams() and lists state = 'pre' rows from team_schedule(360).
+
+  - name: world_cup_2022
+    check_sql: >-
+      SELECT
+        (SELECT bool_and(winner = 'Argentina' AND team1_penalties = 4 AND team2_penalties = 2)
+           FROM soccer.main.world_cup_matches(2022) WHERE round = 'Final')
+        AND
+        (SELECT arg_max(team, goals) = 'France' AND max(goals) = 16
+           FROM (SELECT team, count(*) AS goals FROM soccer.main.world_cup_goals(2022) GROUP BY team))
+    success_criteria: >-
+      Reports Argentina beating France 4-2 on penalties after 3-3 from world_cup_matches, and
+      France's 16 goals from world_cup_goals.
+
+  - name: bundesliga_season
+    check_sql: >-
+      SELECT
+        (SELECT bool_and(team_name = 'FC Bayern München' AND points = 89)
+           FROM soccer.main.bundesliga_table(2025) WHERE position = 1)
+        AND (SELECT count(*) = 9 FROM soccer.main.bundesliga_matches(2025, matchday := 34))
+    success_criteria: >-
+      Uses bundesliga_table(2025) and bundesliga_matches(2025, matchday := 34).

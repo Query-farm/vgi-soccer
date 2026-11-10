@@ -1,0 +1,237 @@
+{
+ "timestamp": "2026-11-10T17:36:41Z",
+ "status": "success",
+ "season": {
+  "year": 2026,
+  "displayName": "2026-27 English Premier League",
+  "type": 14308,
+  "name": "2026-27 English Premier League"
+ },
+ "league": {
+  "id": "700",
+  "name": "English Premier League",
+  "abbreviation": "Premier League",
+  "shortName": "Premier League",
+  "midsizeName": "ENG.1",
+  "slug": "eng.1",
+  "isTournament": false
+ },
+ "stats": [
+  {
+   "name": "goalsLeaders",
+   "displayName": "Goals",
+   "shortDisplayName": "Goals",
+   "abbreviation": "G",
+   "leaders": [
+    {
+     "displayValue": "Matches: 38, Goals: 25",
+     "shortDisplayValue": "M: 38, G: 25: A: 1",
+     "value": 25.0,
+     "athlete": {
+      "id": "142200",
+      "uid": "s:600~a:142200",
+      "guid": "66b16016-7a3a-434f-ae82-e767fc5fac88",
+      "displayName": "Harry Kane",
+      "shortName": "H. Kane",
+      "jersey": "10",
+      "team": {
+       "id": "367",
+       "name": "Tottenham Hotspur",
+       "abbreviation": "TOT",
+       "displayName": "Tottenham Hotspur",
+       "color": "ffffff"
+      }
+     }
+    },
+    {
+     "displayValue": "Matches: 36, Goals: 24",
+     "shortDisplayValue": "M: 36, G: 24: A: 6",
+     "value": 24.0,
+     "athlete": {
+      "id": "165648",
+      "uid": "s:600~a:165648",
+      "guid": "ce479acd-b31c-e4c3-9a3e-76c4ab169a8d",
+      "displayName": "Jamie Vardy",
+      "shortName": "J. Vardy",
+      "jersey": "9",
+      "team": {
+       "id": "375",
+       "name": "Leicester City",
+       "abbreviation": "LEI",
+       "displayName": "Leicester City",
+       "color": "0202fb"
+      }
+     }
+    },
+    {
+     "displayValue": "Matches: 30, Goals: 24",
+     "shortDisplayValue": "M: 30, G: 24: A: 2",
+     "value": 24.0,
+     "athlete": {
+      "id": "44927",
+      "uid": "s:600~a:44927",
+      "guid": "4f95b31b-6d9d-4d79-2c6c-3eaeee58a008",
+      "displayName": "Sergio Agüero",
+      "shortName": "S. Agüero",
+      "jersey": "10",
+      "team": {
+       "id": "382",
+       "name": "Manchester City",
+       "abbreviation": "MNC",
+       "displayName": "Manchester City",
+       "color": "99c5ea"
+      }
+     }
+    },
+    {
+     "displayValue": "Matches: 37, Goals: 18",
+     "shortDisplayValue": "M: 37, G: 18: A: 6",
+     "value": 18.0,
+     "athlete": {
+      "id": "139437",
+      "uid": "s:600~a:139437",
+      "guid": "b7f7737c-1e5a-7165-d26a-413acf8ced3d",
+      "displayName": "Romelu Lukaku",
+      "shortName": "R. Lukaku",
+      "jersey": "10",
+      "team": {
+       "id": "368",
+       "name": "Everton",
+       "abbreviation": "EVE",
+       "displayName": "Everton",
+       "color": "0606fa"
+      }
+     }
+    },
+    {
+     "displayValue": "Matches: 37, Goals: 17",
+     "shortDisplayValue": "M: 37, G: 17: A: 11",
+     "value": 17.0,
+     "athlete": {
+      "id": "163940",
+      "uid": "s:600~a:163940",
+      "guid": "dc6f223c-95c0-3392-45d6-79f90cbe3284",
+      "displayName": "Riyad Mahrez",
+      "shortName": "R. Mahrez",
+      "jersey": "26",
+      "team": {
+       "id": "375",
+       "name": "Leicester City",
+       "abbreviation": "LEI",
+       "displayName": "Leicester City",
+       "color": "0202fb"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "assistsLeaders",
+   "displayName": "Assists",
+   "shortDisplayName": "Assists",
+   "abbreviation": "A",
+   "leaders": [
+    {
+     "displayValue": "Matches: 35, Assists: 19",
+     "shortDisplayValue": "M: 35, G: 6: A: 19",
+     "value": 19.0,
+     "athlete": {
+      "id": "84775",
+      "uid": "s:600~a:84775",
+      "guid": "907b721f-990c-c7a8-643c-92123637a50c",
+      "displayName": "Mesut Özil",
+      "shortName": "M. Özil",
+      "jersey": "11",
+      "team": {
+       "id": "359",
+       "name": "Arsenal",
+       "abbreviation": "ARS",
+       "displayName": "Arsenal",
+       "color": "e20520"
+      }
+     }
+    },
+    {
+     "displayValue": "Matches: 35, Assists: 13",
+     "shortDisplayValue": "M: 35, G: 6: A: 13",
+     "value": 13.0,
+     "athlete": {
+      "id": "144130",
+      "uid": "s:600~a:144130",
+      "guid": "04f7b812-2cb2-075f-977b-e89d85a9d666",
+      "displayName": "Christian Eriksen",
+      "shortName": "C. Eriksen",
+      "jersey": "23",
+      "team": {
+       "id": "367",
+       "name": "Tottenham Hotspur",
+       "abbreviation": "TOT",
+       "displayName": "Tottenham Hotspur",
+       "color": "ffffff"
+      }
+     }
+    },
+    {
+     "displayValue": "Matches: 34, Assists: 12",
+     "shortDisplayValue": "M: 34, G: 7: A: 12",
+     "value": 12.0,
+     "athlete": {
+      "id": "122575",
+      "uid": "s:600~a:122575",
+      "guid": "e2381cc4-5341-65d0-22d0-a2e1e606bf8b",
+      "displayName": "Dusan Tadic",
+      "shortName": "D. Tadic",
+      "jersey": "11",
+      "team": {
+       "id": "376",
+       "name": "Southampton",
+       "abbreviation": "SOU",
+       "displayName": "Southampton",
+       "color": "ED1A3B"
+      }
+     }
+    },
+    {
+     "displayValue": "Matches: 30, Assists: 12",
+     "shortDisplayValue": "M: 30, G: 9: A: 12",
+     "value": 12.0,
+     "athlete": {
+      "id": "84877",
+      "uid": "s:600~a:84877",
+      "guid": "74f855d1-a99c-d18a-6fff-60e523a48935",
+      "displayName": "Dimitri Payet",
+      "shortName": "D. Payet",
+      "jersey": "27",
+      "team": {
+       "id": "371",
+       "name": "West Ham United",
+       "abbreviation": "WHU",
+       "displayName": "West Ham United",
+       "color": "7c2c3b"
+      }
+     }
+    },
+    {
+     "displayValue": "Matches: 37, Assists: 11",
+     "shortDisplayValue": "M: 37, G: 17: A: 11",
+     "value": 11.0,
+     "athlete": {
+      "id": "163940",
+      "uid": "s:600~a:163940",
+      "guid": "dc6f223c-95c0-3392-45d6-79f90cbe3284",
+      "displayName": "Riyad Mahrez",
+      "shortName": "R. Mahrez",
+      "jersey": "26",
+      "team": {
+       "id": "375",
+       "name": "Leicester City",
+       "abbreviation": "LEI",
+       "displayName": "Leicester City",
+       "color": "0202fb"
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

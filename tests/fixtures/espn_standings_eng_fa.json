@@ -1,0 +1,13 @@
+{
+ "uid": "s:600~l:3918",
+ "id": "40",
+ "name": "English FA Cup",
+ "abbreviation": "English FA Cup",
+ "season": {
+  "year": 2026,
+  "startDate": "2026-08-01T04:00Z",
+  "endDate": "2027-05-22T04:00Z",
+  "displayName": "2026-27 English FA Cup"
+ },
+ "seasons": []
+}
