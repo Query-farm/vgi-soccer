@@ -332,6 +332,16 @@ Known upstream behavior:
 - Some competitions, such as `ger.w.1`, `ita.w.1` and most domestic cups, have no
   standings on ESPN, so `standings()` returns no rows for them. OpenLigaDB's
   `fbl1` covers the Frauen-Bundesliga table.
+- During stoppage time ESPN holds the key-event and play clock at the end of
+  the period (5400 seconds for every 90'+N event). Use `clock_display` for added
+  minutes.
+- ESPN's per-team penalty counts, goalkeeper `shotsFaced` and roster injury
+  fields are empty or contradict the match's own events, so the worker leaves
+  them out. To count converted penalties, filter `match_key_events()` on
+  `event_type = 'penalty---scored'`.
+- openfootball records many results as a bare `[team1, team2]` list instead of
+  an `ft`/`ht` object, especially before 2006. The worker reads both forms.
+  Half-time scores are `NULL` when only the bare list is given.
 
 ## Development and release checks
 

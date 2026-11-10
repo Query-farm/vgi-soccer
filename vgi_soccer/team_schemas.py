@@ -62,7 +62,6 @@ ROSTER_SCHEMA = pa.schema(
         field("weight_lb", pa.decimal128(5, 1), "Weight in pounds."),
         field("gender", pa.string(), "MALE or FEMALE."),
         field("status", pa.string(), "Squad status, e.g. Active."),
-        field("injury_status", pa.string(), "Most recent injury status, when reported."),
     ]
 )
 
@@ -163,7 +162,6 @@ def flatten_roster(payload: Any, league: str, team_id: int) -> list[dict[str, An
         if athlete_id is None:
             continue
         position = mapping(athlete.get("position"))
-        injuries = sequence(athlete.get("injuries"))
         rows.append(
             {
                 "league_slug": league,
@@ -182,7 +180,6 @@ def flatten_roster(payload: Any, league: str, team_id: int) -> list[dict[str, An
                 "weight_lb": to_decimal(athlete.get("weight")),
                 "gender": to_text(athlete.get("gender")),
                 "status": to_text(mapping(athlete.get("status")).get("name")),
-                "injury_status": to_text(mapping(injuries[0]).get("status")) if injuries else None,
             }
         )
     return rows

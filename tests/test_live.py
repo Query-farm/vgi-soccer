@@ -95,9 +95,20 @@ def test_world_cup_history() -> None:
     payload = api.fetch_world_cup(2022).payload
     matches = flatten_world_cup_matches(payload, 2022)
     assert len(matches) == 64
+    assert all(row["team1_goals"] is not None and row["team2_goals"] is not None for row in matches)
     assert next(row for row in matches if row["round"] == "Final")["winner"] == "Argentina"
     assert len(flatten_world_cup_goals(payload, 2022)) == 172
     assert len(flatten_world_cup_matches(api.fetch_world_cup(1930).payload, 1930)) == 18
+    # 1990 stores most results as bare [team1, team2] lists.
+    italia = flatten_world_cup_matches(api.fetch_world_cup(1990).payload, 1990)
+    assert all(row["team1_goals"] is not None for row in italia)
+    final_scores = [
+        (row["team1_extra_time"], row["team2_extra_time"])
+        if row["team1_extra_time"] is not None
+        else (row["team1_goals"], row["team2_goals"])
+        for row in italia
+    ]
+    assert sum(home + away for home, away in final_scores) == 115  # Italia 90's famous low total
 
 
 def test_openligadb_completed_season() -> None:

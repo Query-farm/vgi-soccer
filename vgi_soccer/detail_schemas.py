@@ -74,8 +74,10 @@ _TEAM_STATS = {
     "interceptions": "interceptions",
     "totalClearance": "clearances",
     "effectiveClearance": "effective_clearances",
-    "penaltyKickShots": "penalties_taken",
-    "penaltyKickGoals": "penalty_goals",
+    # ESPN's penaltyKickShots/penaltyKickGoals are not exposed: across probed 2025-26
+    # Premier League matches they disagree with the match's own key events (for example
+    # 2 goals from 1 attempt, or 0 goals for a converted penalty). Count
+    # match_key_events rows with event_type 'penalty---scored' instead.
 }
 
 TEAM_STATS_SCHEMA = pa.schema(
@@ -105,7 +107,8 @@ _PLAYER_STATS = {
     "ownGoals": "own_goals",
     "saves": "saves",
     "goalsConceded": "goals_conceded",
-    "shotsFaced": "shots_faced",
+    # ESPN also sends ``shotsFaced``, but it is 0 for every goalkeeper in every match
+    # probed (including keepers who made saves), so it is deliberately not exposed.
 }
 
 PLAYER_MATCH_SCHEMA = pa.schema(
@@ -138,7 +141,12 @@ KEY_EVENTS_SCHEMA = pa.schema(
         field("event_type", pa.string(), "Type slug, e.g. goal, yellow-card, substitution."),
         field("event_type_text", pa.string(), "Type label, e.g. Goal."),
         field("period", pa.int32(), "Match period number (1-2 halves, 3-4 extra time, 5 shoot-out)."),
-        field("clock_seconds", pa.int32(), "Match clock in seconds since kick-off."),
+        field(
+            "clock_seconds",
+            pa.int32(),
+            "Match clock in seconds since kick-off. ESPN holds it at the end of the period during "
+            "stoppage time (5400 for every 90'+N event); use clock_display for added minutes.",
+        ),
         field("clock_display", pa.string(), "Displayed minute, e.g. 45'+2'."),
         field("scoring_play", pa.bool_(), "Whether a goal was scored."),
         field("team_id", pa.int32(), "Team ESPN identifier (opaque integer)."),
@@ -184,7 +192,12 @@ PLAYS_SCHEMA = pa.schema(
         field("play_type", pa.string(), "Type slug, e.g. pass, shot-on-target, goal."),
         field("play_type_text", pa.string(), "Type label."),
         field("period", pa.int32(), "Match period number (1-2 halves, 3-4 extra time, 5 shoot-out)."),
-        field("clock_seconds", pa.int32(), "Match clock in seconds since kick-off."),
+        field(
+            "clock_seconds",
+            pa.int32(),
+            "Match clock in seconds since kick-off. ESPN holds it at the end of the period during "
+            "stoppage time (5400 for every 90'+N event); use clock_display for added minutes.",
+        ),
         field("clock_display", pa.string(), "Displayed minute."),
         field("team_id", pa.int32(), "ESPN identifier of the acting team (opaque integer)."),
         field("athlete_id", pa.int64(), "ESPN identifier of the first participant (opaque integer)."),
@@ -203,9 +216,12 @@ PLAYS_SCHEMA = pa.schema(
             "Post-shot expected goals (probability 0-1) for on-target shots.",
         ),
         field(
-            "field_x", pa.float64(), "Start x coordinate in percent of pitch length (0-100, attacking right)."
+            "field_x",
+            pa.float64(),
+            "Start x coordinate in percent of pitch length (about 0-100, attacking right; ESPN "
+            "occasionally reports values just outside that range).",
         ),
-        field("field_y", pa.float64(), "Start y coordinate in percent of pitch width (0-100)."),
+        field("field_y", pa.float64(), "Start y coordinate in percent of pitch width (about 0-100)."),
         field("text", pa.string(), "ESPN description."),
         field("wallclock", TIMESTAMP, "Real-world UTC time of the play."),
     ]

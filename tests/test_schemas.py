@@ -251,6 +251,11 @@ def test_match_team_and_player_stats() -> None:
         goals[row["team_name"]] += row.get("goals") or 0
     assert goals == {"Manchester United": 4, "Aston Villa": 4}
     assert sum(1 for row in players if row["starter"]) == 22
+    # ESPN sends these, but they contradict the match itself here: 0 penalty goals for
+    # two converted penalties, and shotsFaced 0 for keepers with 3 and 5 saves.
+    assert {"penalties_taken", "penalty_goals"}.isdisjoint(TEAM_STATS_SCHEMA.names)
+    assert "shots_faced" not in PLAYER_MATCH_SCHEMA.names
+    assert "injury_status" not in ROSTER_SCHEMA.names  # ESPN never populates soccer injuries
     batch_from_rows(teams, TEAM_STATS_SCHEMA)
     batch_from_rows(players, PLAYER_MATCH_SCHEMA)
 
@@ -310,6 +315,13 @@ def test_world_cup_matches_and_goals() -> None:
         2014,
     )
     assert (stoppage[0]["minute"], stoppage[0]["stoppage_minute"], stoppage[0]["own_goal"]) == (90, 3, True)
+    # openfootball writes some results (England 0-0 USA, Ghana 0-2 Uruguay in 2022, most
+    # pre-2006 matches) as a bare list rather than an {"ft": ...} object.
+    ghana = next(row for row in matches if row["team1"] == "Ghana")
+    assert (ghana["team1_goals"], ghana["team2_goals"], ghana["team1_halftime"]) == (0, 2, None)
+    assert ghana["winner"] == "Uruguay"
+    england = next(row for row in matches if row["team1"] == "England")
+    assert (england["team1_goals"], england["team2_goals"], england["winner"]) == (0, 0, None)
     batch_from_rows(matches, WORLD_CUP_MATCHES_SCHEMA)
     batch_from_rows(goals, WORLD_CUP_GOALS_SCHEMA)
 

@@ -133,7 +133,7 @@ class RosterFunction(Sized, TableFunctionGenerator[RosterArgs]):
             title="Team Squad",
             llm=(
                 "Current squad for one team (positional team_id) in a league: athlete_id, shirt number, "
-                "position, age, birth date, nationality, height (in), weight (lb), injury status. "
+                "position, age, birth date, nationality, height (in), weight (lb), registration status. "
                 "athlete_id feeds player_stats()."
             ),
             schema=ROSTER_SCHEMA,

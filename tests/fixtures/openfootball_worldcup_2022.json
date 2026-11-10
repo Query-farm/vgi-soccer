@@ -63,6 +63,43 @@
    "ground": "Al Thumama Stadium, Doha"
   },
   {
+   "round": "Matchday 6",
+   "date": "2022-11-25",
+   "time": "22:00",
+   "team1": "England",
+   "team2": "USA",
+   "score": [
+    0,
+    0
+   ],
+   "group": "Group B",
+   "ground": "Al Bayt Stadium, Al Khor"
+  },
+  {
+   "round": "Matchday 13",
+   "date": "2022-12-02",
+   "time": "18:00",
+   "team1": "Ghana",
+   "team2": "Uruguay",
+   "score": [
+    0,
+    2
+   ],
+   "goals1": [],
+   "goals2": [
+    {
+     "name": "Giorgian De Arrascaeta",
+     "minute": "26"
+    },
+    {
+     "name": "Giorgian De Arrascaeta",
+     "minute": "32"
+    }
+   ],
+   "group": "Group H",
+   "ground": "Al Janoub Stadium, Al Wakrah"
+  },
+  {
    "round": "Round of 16",
    "date": "2022-12-03",
    "time": "18:00",

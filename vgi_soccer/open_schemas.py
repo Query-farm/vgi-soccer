@@ -105,7 +105,11 @@ BUNDESLIGA_MATCHES_SCHEMA = pa.schema(
         field("team1_halftime", pa.int32(), "Number of home goals at half-time."),
         field("team2_halftime", pa.int32(), "Number of away goals at half-time."),
         field("finished", pa.bool_(), "Whether the match is finished."),
-        field("viewers", pa.int32(), "Number of spectators reported (null when unknown)."),
+        field(
+            "viewers",
+            pa.int32(),
+            "Number of spectators, when a contributor recorded it (rarely; usually null).",
+        ),
     ]
 )
 
@@ -122,6 +126,10 @@ def _pair(score: Any, key: str) -> tuple[int | None, int | None]:
 def _match_row(match: Any, index: int, year: int) -> dict[str, Any]:
     match = mapping(match)
     score = match.get("score")
+    if isinstance(score, list):
+        # Many openfootball files record a plain full-time result as a bare
+        # ``[team1, team2]`` list instead of ``{"ft": [...], "ht": [...]}``.
+        score = {"ft": score}
     ft1, ft2 = _pair(score, "ft")
     ht1, ht2 = _pair(score, "ht")
     et1, et2 = _pair(score, "et")
