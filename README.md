@@ -34,18 +34,18 @@ before you use it.
 
 ## Quick start
 
-Install the released worker with `uv`:
+The worker is not published to PyPI. `uvx` runs the tagged release straight from
+GitHub and caches it after the first use:
 
 ```bash
-uv tool install vgi-soccer
-vgi-soccer
+uvx --from git+https://github.com/Query-farm/vgi-soccer@v0.1.0 vgi-soccer --help
 ```
 
 Launch Haybarn with the catalog pre-attached:
 
 ```bash
 uvx haybarn-cli \
-  -cmd "INSTALL vgi FROM community; LOAD vgi; ATTACH 'soccer' (TYPE vgi, LOCATION 'vgi-soccer');" \
+  -cmd "INSTALL vgi FROM community; LOAD vgi; ATTACH 'soccer' (TYPE vgi, LOCATION 'uvx --from git+https://github.com/Query-farm/vgi-soccer@v0.1.0 vgi-soccer');" \
   :memory:
 ```
 
@@ -56,7 +56,7 @@ INSTALL vgi FROM community;
 LOAD vgi;
 ATTACH 'soccer' (
   TYPE vgi,
-  LOCATION 'vgi-soccer'
+  LOCATION 'uvx --from git+https://github.com/Query-farm/vgi-soccer@v0.1.0 vgi-soccer'
 );
 ```
 
@@ -257,7 +257,7 @@ to allow anonymous access:
 export VGI_SIGNING_KEY='a-long-random-secret-shared-by-every-replica'
 export VGI_BEARER_TOKENS='replace-with-a-random-token=haybarn'
 
-vgi-soccer-http \
+uvx --from git+https://github.com/Query-farm/vgi-soccer@v0.1.0 vgi-soccer-http \
   --host 0.0.0.0 \
   --port 8000 \
   --cors-origins 'https://sql.example.com' \
@@ -365,9 +365,12 @@ the fixtures from a local HTTP server. Live upstream smoke tests are opt-in with
 `uv run pytest -m live`. They also run in a serialized scheduled workflow,
 together with the executing vgi-lint pass that runs every catalog example.
 
-Releases are cut from GitHub: create a release named `vX.Y.Z` that matches the
-version in `pyproject.toml`. CI then builds, attests and validates the
-distributions and publishes them to PyPI through trusted publishing.
+Publishing is driven by releases. Create a GitHub release named `vX.Y.Z` that
+matches the version in `pyproject.toml`. CI then builds, validates and attests
+the wheel and sdist, attaches them to the release, and publishes a
+multi-platform container image to `ghcr.io/query-farm/vgi-soccer`. The package is
+not published to PyPI; install it from the release tag as shown in the quick
+start.
 
 ---
 
