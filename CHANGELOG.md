@@ -4,6 +4,13 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [0.2.0]
+
+- Speaks VGI protocol 3.3 (vgi-python 0.51); requires the current VGI DuckDB extension, 3.2
+  extensions are incompatible. Table scans stay callable as functions (they are listed in the
+  schema functions too).
+- vgi-lint gates move to vgi-lint-check 2.5.0 (2.2.0 cannot attach 3.3 workers).
+
 ## [0.1.0]
 
 - First release: a read-only `soccer` catalog for VGI protocol 3.2 (vgi-python 0.50).
