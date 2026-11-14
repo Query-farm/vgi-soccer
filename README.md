@@ -383,3 +383,7 @@ start.
 ---
 
 Copyright 2026 Query Farm LLC - https://query.farm. Released under the [MIT License](LICENSE).
+
+## Executed notebooks
+
+See the [soccer notebook walkthrough](notebooks/README.md) for goal ledgers, extra time and shoot-outs.

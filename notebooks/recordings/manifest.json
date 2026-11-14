@@ -1,0 +1,9 @@
+{
+  "url": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2022/worldcup.json",
+  "received_utc": "2026-11-14T10:22:21.420017+00:00",
+  "sha256": "f4f0499c30076bc8e3702f400765900797fb22212a32aaa8137e1dfc49449a68",
+  "bytes": 25358,
+  "filename": "worldcup-2022.json",
+  "license": "CC0",
+  "source_date": "Sat, 14 Nov 2026 10:22:21 GMT"
+}
