@@ -1,6 +1,6 @@
 # Private graders for the public vgi.agent_test_tasks prompts.
 #
-# Every task grades with check_sql, never reference_sql. Several tasks read live
+# Tasks grade with check_sql, not reference_sql (one exception below). Several tasks read live
 # data (current tables, today's scores) that moves between the analyst's run and
 # a reference run, and even the historical tasks come from upstreams the analyst
 # may legitimately shape differently (extra columns, other orderings), so an
@@ -121,18 +121,20 @@ tasks:
 
   - name: world_cup_2022_semi_finalists
     # Composed: world_cup_matches names the semi-finalists and the knockout
-    # rounds; world_cup_goals counts each team's goals in those rounds.
-    check_sql: >-
+    # rounds; world_cup_goals counts each team's goals in those rounds. The 2022
+    # tournament is finished, static openfootball data, so this task grades by
+    # exact comparison; the prompt pins the two columns and the row order.
+    reference_sql: >-
       WITH semi_finalists AS (
         SELECT unnest([team1, team2]) AS team
         FROM soccer.main.world_cup_matches(2022) WHERE round = 'Semi-finals'),
       knockout_goals AS (
-        SELECT team, count(*) AS goals FROM soccer.main.world_cup_goals(2022)
+        SELECT team, count(*) AS knockout_goals FROM soccer.main.world_cup_goals(2022)
         WHERE round IN (SELECT round FROM soccer.main.world_cup_matches(2022) WHERE group_name IS NULL)
         GROUP BY team)
-      SELECT list(s.team || ':' || coalesce(k.goals, 0) ORDER BY s.team)
-        = ['Argentina:10', 'Croatia:4', 'France:10', 'Morocco:2']
+      SELECT s.team, coalesce(k.knockout_goals, 0) AS knockout_goals
       FROM semi_finalists AS s LEFT JOIN knockout_goals AS k USING (team)
+      ORDER BY knockout_goals DESC, s.team
     success_criteria: >-
       Takes the semi-finalists from world_cup_matches(2022) and counts their knockout-round goals
       from world_cup_goals(2022): Argentina 10, France 10, Croatia 4, Morocco 2.

@@ -191,7 +191,7 @@ SELECT l.rank, l.player_name, l.team_name, l.goals, s.rank AS team_rank, s.point
 FROM soccer.main.stat_leaders(league := 'eng.1', season := 2023) AS l
 JOIN soccer.main.standings(league := 'eng.1', season := 2023) AS s USING (team_id)
 WHERE l.category = 'goals'
-ORDER BY l.rank
+ORDER BY l.rank, l.player_name
 LIMIT 10;
 
 -- Erling Haaland's Premier League seasons (athlete 253989)

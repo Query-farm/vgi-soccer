@@ -246,7 +246,9 @@ _AGENT_TEST_TASKS = json.dumps(
             "prompt": (
                 "Which four teams reached the semi-finals of the 2022 World Cup, and how many goals did "
                 "each score across all of its knockout-stage matches (extra time counts, penalty "
-                "shoot-outs do not)?"
+                "shoot-outs do not)? Return exactly two columns, team (the country name) and "
+                "knockout_goals (an integer), one row per semi-finalist, ordered by knockout_goals "
+                "descending and then team."
             ),
         },
     ]
