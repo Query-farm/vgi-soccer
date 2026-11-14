@@ -118,3 +118,21 @@ tasks:
         AND (SELECT count(*) = 9 FROM soccer.main.bundesliga_matches(2025, matchday := 34))
     success_criteria: >-
       Uses bundesliga_table(2025) and bundesliga_matches(2025, matchday := 34).
+
+  - name: world_cup_2022_semi_finalists
+    # Composed: world_cup_matches names the semi-finalists and the knockout
+    # rounds; world_cup_goals counts each team's goals in those rounds.
+    check_sql: >-
+      WITH semi_finalists AS (
+        SELECT unnest([team1, team2]) AS team
+        FROM soccer.main.world_cup_matches(2022) WHERE round = 'Semi-finals'),
+      knockout_goals AS (
+        SELECT team, count(*) AS goals FROM soccer.main.world_cup_goals(2022)
+        WHERE round IN (SELECT round FROM soccer.main.world_cup_matches(2022) WHERE group_name IS NULL)
+        GROUP BY team)
+      SELECT list(s.team || ':' || coalesce(k.goals, 0) ORDER BY s.team)
+        = ['Argentina:10', 'Croatia:4', 'France:10', 'Morocco:2']
+      FROM semi_finalists AS s LEFT JOIN knockout_goals AS k USING (team)
+    success_criteria: >-
+      Takes the semi-finalists from world_cup_matches(2022) and counts their knockout-round goals
+      from world_cup_goals(2022): Argentina 10, France 10, Croatia 4, Morocco 2.

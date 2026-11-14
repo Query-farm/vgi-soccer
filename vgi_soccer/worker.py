@@ -11,16 +11,18 @@ from vgi.catalog import Catalog, ConstraintInfo, Schema, Table, constraint_recor
 
 from vgi_soccer.league_schemas import LEAGUES_SCHEMA, STANDINGS_SCHEMA
 from vgi_soccer.match_detail import FUNCTIONS as DETAIL_FUNCTIONS
+from vgi_soccer.match_detail import PLAYER_XG_EXAMPLE
 from vgi_soccer.match_schemas import MATCH_SCHEMA
 from vgi_soccer.matches import FUNCTIONS as MATCH_FUNCTIONS
 from vgi_soccer.matches import CurrentMatchesFunction
 from vgi_soccer.meta import column_comments
 from vgi_soccer.open_sources import FUNCTIONS as OPEN_FUNCTIONS
+from vgi_soccer.open_sources import KNOCKOUT_SCORERS_EXAMPLE, MATCHDAY_WITH_TABLE_EXAMPLE
 from vgi_soccer.standings import FUNCTIONS as STANDINGS_FUNCTIONS
 from vgi_soccer.standings import CurrentStandingsFunction, LeaguesFunction
 from vgi_soccer.team_schemas import LEADERS_SCHEMA
 from vgi_soccer.teams import FUNCTIONS as TEAM_FUNCTIONS
-from vgi_soccer.teams import CurrentStatLeadersFunction
+from vgi_soccer.teams import SCORERS_WITH_TABLE_EXAMPLE, CurrentStatLeadersFunction
 
 SOURCE_URL = "https://github.com/Query-farm/vgi-soccer"
 
@@ -52,6 +54,28 @@ _LEAGUES_TAGS = {
     ),
 }
 
+_CURRENT_STANDINGS_EXAMPLES = (
+    (
+        "The current Premier League table.",
+        "SELECT rank, team_name, games_played, goal_difference, points "
+        "FROM soccer.main.current_standings WHERE league_slug = 'eng.1' ORDER BY rank",
+    ),
+    (
+        "Leaders of each big-five league.",
+        "SELECT league_name, team_name, points FROM soccer.main.current_standings "
+        "WHERE rank = 1 ORDER BY points DESC",
+    ),
+)
+
+# Schema-level examples: the everyday current table plus queries that combine several objects.
+_SCHEMA_EXAMPLES = _examples(
+    *_CURRENT_STANDINGS_EXAMPLES,
+    SCORERS_WITH_TABLE_EXAMPLE,
+    PLAYER_XG_EXAMPLE,
+    KNOCKOUT_SCORERS_EXAMPLE,
+    MATCHDAY_WITH_TABLE_EXAMPLE,
+)
+
 _CURRENT_STANDINGS_TAGS = {
     "provider": "espn",
     "vgi.category": "standings",
@@ -69,18 +93,7 @@ _CURRENT_STANDINGS_TAGS = {
         "Today's tables for Europe's big-five leagues as one read-only table. Use `standings()` for "
         "other competitions and historical seasons."
     ),
-    "vgi.example_queries": _examples(
-        (
-            "The current Premier League table.",
-            "SELECT rank, team_name, games_played, goal_difference, points "
-            "FROM soccer.main.current_standings WHERE league_slug = 'eng.1' ORDER BY rank",
-        ),
-        (
-            "Leaders of each big-five league.",
-            "SELECT league_name, team_name, points FROM soccer.main.current_standings "
-            "WHERE rank = 1 ORDER BY points DESC",
-        ),
-    ),
+    "vgi.example_queries": _examples(*_CURRENT_STANDINGS_EXAMPLES),
 }
 
 _CURRENT_SCOREBOARD_TAGS = {
@@ -226,6 +239,14 @@ _AGENT_TEST_TASKS = json.dumps(
             "prompt": (
                 "Show the final 2025-26 Bundesliga table from OpenLigaDB and the results of the last "
                 "matchday (34)."
+            ),
+        },
+        {
+            "name": "world_cup_2022_semi_finalists",
+            "prompt": (
+                "Which four teams reached the semi-finals of the 2022 World Cup, and how many goals did "
+                "each score across all of its knockout-stage matches (extra time counts, penalty "
+                "shoot-outs do not)?"
             ),
         },
     ]
@@ -399,7 +420,7 @@ SOCCER_CATALOG = Catalog(
                     "`scoreboard()` or `schedule()`, and pass it to the `match_*` functions for box "
                     "scores, line-ups, key events, commentary and play-by-play with expected goals."
                 ),
-                "vgi.example_queries": _CURRENT_STANDINGS_TAGS["vgi.example_queries"],
+                "vgi.example_queries": _SCHEMA_EXAMPLES,
             },
             functions=[
                 *STANDINGS_FUNCTIONS,

@@ -254,12 +254,24 @@ class MatchCommentaryFunction(_SummaryBacked, TableFunctionGenerator[MatchArgs])
         examples = function_examples(_COMMENTARY_EXAMPLES)
 
 
+#: Composed: shot xG from the play-by-play joined to the box score's goals on athlete_id.
+PLAYER_XG_EXAMPLE = (
+    "Top ten players by shot xG in Manchester United 4-4 Aston Villa, with their shots and goals, "
+    "joining match_plays to match_player_stats on athlete_id.",
+    "WITH shot_xg AS (SELECT athlete_id, count(*) AS shots, round(sum(expected_goals), 2) AS xg "
+    f"FROM soccer.main.match_plays({EXAMPLE_EVENT}) WHERE expected_goals IS NOT NULL GROUP BY athlete_id) "
+    "SELECT p.team_name, p.player_name, x.shots, x.xg, p.goals "
+    f"FROM soccer.main.match_player_stats({EXAMPLE_EVENT}) AS p JOIN shot_xg AS x USING (athlete_id) "
+    "ORDER BY x.xg DESC, p.player_name LIMIT 10",
+)
+
 _PLAYS_EXAMPLES = [
     (
         "Shots with expected goals (xG), biggest chances first.",
         "SELECT clock_display, play_type, expected_goals, text FROM soccer.main.match_plays("
         f"{EXAMPLE_EVENT}) WHERE expected_goals IS NOT NULL ORDER BY expected_goals DESC LIMIT 10",
-    )
+    ),
+    PLAYER_XG_EXAMPLE,
 ]
 
 

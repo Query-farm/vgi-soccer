@@ -163,13 +163,24 @@ class LeadersArgs:
     season: Annotated[int | None, season_arg()]
 
 
+#: Composed: a leaderboard joined to the same season's table on ESPN team_id.
+SCORERS_WITH_TABLE_EXAMPLE = (
+    "2023-24 Premier League top ten scorers with their club's final league position and points, "
+    "joining stat_leaders to standings on team_id.",
+    "SELECT l.rank, l.player_name, l.team_name, l.goals, s.rank AS team_rank, s.points "
+    "FROM soccer.main.stat_leaders(league := 'eng.1', season := 2023) AS l "
+    "JOIN soccer.main.standings(league := 'eng.1', season := 2023) AS s USING (team_id) "
+    "WHERE l.category = 'goals' ORDER BY l.rank, l.player_name LIMIT 10",
+)
+
 _LEADERS_EXAMPLES = [
     (
         "The 2015-16 Premier League top scorers.",
         "SELECT rank, player_name, team_name, goals, matches "
         "FROM soccer.main.stat_leaders(league := 'eng.1', season := 2015) "
         "WHERE category = 'goals' ORDER BY rank LIMIT 10",
-    )
+    ),
+    SCORERS_WITH_TABLE_EXAMPLE,
 ]
 
 

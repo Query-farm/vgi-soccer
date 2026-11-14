@@ -48,13 +48,27 @@ class WorldCupArgs:
     ]
 
 
+#: Composed: knockout results joined to their goals (same round, same pair of teams).
+KNOCKOUT_SCORERS_EXAMPLE = (
+    "2018 World Cup knockout results after extra time, with shoot-out scores and every goal "
+    "scorer in minute order (own goals marked), joining world_cup_matches to world_cup_goals.",
+    "SELECT m.round, m.team1, coalesce(m.team1_extra_time, m.team1_goals) AS team1_score, "
+    "coalesce(m.team2_extra_time, m.team2_goals) AS team2_score, m.team2, m.team1_penalties, "
+    "m.team2_penalties, string_agg(g.player_name || ' ' || g.minute_display || "
+    "CASE WHEN g.own_goal THEN ' (og)' ELSE '' END, ', ' ORDER BY g.minute, g.stoppage_minute) AS scorers "
+    "FROM soccer.main.world_cup_matches(2018) AS m LEFT JOIN soccer.main.world_cup_goals(2018) AS g "
+    "ON g.round = m.round AND g.team IN (m.team1, m.team2) AND g.opponent IN (m.team1, m.team2) "
+    "WHERE m.group_name IS NULL GROUP BY ALL ORDER BY min(m.match_number)",
+)
+
 _WC_MATCH_EXAMPLES = [
     (
         "The 2022 World Cup knockout rounds, including extra time and penalties.",
         "SELECT round, team1, team2, team1_goals, team2_goals, team1_extra_time, team2_extra_time, "
         "team1_penalties, team2_penalties, winner FROM soccer.main.world_cup_matches(2022) "
         "WHERE group_name IS NULL ORDER BY match_number",
-    )
+    ),
+    KNOCKOUT_SCORERS_EXAMPLE,
 ]
 
 
@@ -242,12 +256,24 @@ class BundesligaMatchesArgs:
     ]
 
 
+#: Composed: one matchday's results with both clubs' table positions (OpenLigaDB team ids).
+MATCHDAY_WITH_TABLE_EXAMPLE = (
+    "Bundesliga matchday 10 of 2025-26 with each club's final 2025-26 table position, joining "
+    "bundesliga_matches to bundesliga_table on team_id for home and away side.",
+    "SELECT m.team1_name, h.position AS team1_position, m.team1_goals, m.team2_goals, m.team2_name, "
+    "a.position AS team2_position FROM soccer.main.bundesliga_matches(2025, matchday := 10) AS m "
+    "JOIN soccer.main.bundesliga_table(2025) AS h ON h.team_id = m.team1_id "
+    "JOIN soccer.main.bundesliga_table(2025) AS a ON a.team_id = m.team2_id "
+    "ORDER BY least(h.position, a.position)",
+)
+
 _MATCH_EXAMPLES = [
     (
         "Bundesliga matchday 10 of 2025-26 with half-time and full-time scores.",
         "SELECT kickoff, team1_name, team1_goals, team2_goals, team2_name, team1_halftime, team2_halftime "
         "FROM soccer.main.bundesliga_matches(2025, matchday := 10) ORDER BY kickoff",
-    )
+    ),
+    MATCHDAY_WITH_TABLE_EXAMPLE,
 ]
 
 
