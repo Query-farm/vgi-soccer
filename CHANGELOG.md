@@ -7,6 +7,9 @@ All notable changes to this project are documented here.
 ## [0.2.1]
 
 - Docs link to upstream sources (VGI183): the catalog documentation now links the data providers it reads.
+- Docs give an overview, not a function list (VGI173): the catalog doc_llm now describes coverage,
+  sources and how slugs, seasons, event_id and athlete_id tie the objects together instead of naming
+  every table and function.
 
 ## [0.2.0]
 

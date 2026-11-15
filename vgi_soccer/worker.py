@@ -323,16 +323,18 @@ SOCCER_CATALOG = Catalog(
         "vgi.executable_examples": _EXECUTABLE_EXAMPLES,
         "vgi.agent_test_tasks": _AGENT_TEST_TASKS,
         "vgi.doc_llm": (
-            "Read-only world football data. Competitions are identified by ESPN league slugs (eng.1 "
-            "Premier League, esp.1, ger.1, ita.1, fra.1, uefa.champions, fifa.world, ...; see the leagues "
-            "table). Seasons are START years: 2015 = 2015-16. Tables: leagues, current_standings and "
-            "current_stat_leaders (big-five leagues), current_matches (today, all competitions). "
-            "Functions: standings, scoreboard, schedule, team_schedule, teams, roster, stat_leaders, "
-            "player_stats(athlete_id), and per-match detail keyed by event_id: match_summary, "
-            "match_team_stats, match_player_stats, match_key_events, match_commentary, match_plays (with "
-            "xG). Open data: world_cup_matches/world_cup_goals(year) 1930-2026 and bundesliga_table/"
-            "bundesliga_matches(season) from OpenLigaDB. Leading id/year arguments are positional; "
-            "everything else is named (league := 'esp.1')."
+            "Read-only world football data for 200+ competitions: league tables, fixtures and results, "
+            "squads, scoring leaderboards, player season lines, and per-match detail down to box scores, "
+            "key events, commentary and play-by-play with expected goals (xG). Most data is fetched on "
+            "demand from ESPN's undocumented public endpoints; every men's World Cup since 1930 comes "
+            "from openfootball (CC0) and German league data from OpenLigaDB. Competitions are identified "
+            "by ESPN league slugs (eng.1 Premier League, esp.1, ger.1, ita.1, fra.1, uefa.champions, "
+            "fifa.world, ...; list them in the leagues table). Seasons are START years: 2015 = 2015-16. "
+            "Ready-made tables answer today's questions (current big-five tables and leaders, today's "
+            "matches); parameterized functions reach any league and past season. Matches carry an "
+            "event_id that keys the per-match detail, and players carry an athlete_id that keys their "
+            "season lines. Leading id/year arguments are positional; everything else is named "
+            "(league := 'esp.1')."
         ),
         "vgi.doc_md": (
             "# World football data\n\n"
