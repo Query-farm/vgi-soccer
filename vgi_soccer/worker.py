@@ -346,7 +346,14 @@ SOCCER_CATALOG = Catalog(
             "## Sources and terms\n\n"
             "Data is fetched on demand and never rehosted. ESPN endpoints are undocumented and subject "
             "to ESPN's terms; openfootball is CC0; OpenLigaDB is community open data. This worker is not "
-            "affiliated with ESPN, Disney, FIFA, UEFA or any league."
+            "affiliated with ESPN, Disney, FIFA, UEFA or any league.\n\n"
+            "- [ESPN soccer](https://www.espn.com/soccer/): leagues, matches, box scores and players "
+            "(endpoints undocumented; [Disney terms of use](https://disneytermsofuse.com/)).\n"
+            "- [openfootball/worldcup.json](https://github.com/openfootball/worldcup.json): every "
+            "men's World Cup, released under "
+            "[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).\n"
+            "- [OpenLigaDB](https://www.openligadb.de/) and its [API](https://api.openligadb.de/): "
+            "Bundesliga tables and matches."
         ),
     },
     schemas=[
