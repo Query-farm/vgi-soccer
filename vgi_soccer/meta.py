@@ -86,10 +86,10 @@ def to_int(value: Any) -> int | None:
         return int(value) if value.is_integer() else None
     try:
         return int(str(value).strip().lstrip("+"))
-    except (TypeError, ValueError, OverflowError):
+    except TypeError, ValueError, OverflowError:
         try:
             parsed = float(str(value))
-        except (TypeError, ValueError, OverflowError):
+        except TypeError, ValueError, OverflowError:
             return None
         return int(parsed) if parsed.is_integer() else None
 
@@ -100,7 +100,7 @@ def to_decimal(value: Any, places: int = 1) -> Decimal | None:
         return None
     try:
         result = Decimal(str(value).strip().rstrip("%"))
-    except (InvalidOperation, ValueError):
+    except InvalidOperation, ValueError:
         return None
     if not result.is_finite():
         return None
@@ -113,7 +113,7 @@ def to_float(value: Any) -> float | None:
         return None
     try:
         result = float(value)
-    except (TypeError, ValueError):
+    except TypeError, ValueError:
         return None
     return result if result == result and result not in (float("inf"), float("-inf")) else None
 
@@ -137,7 +137,7 @@ def to_timestamp(value: Any) -> datetime | None:
         return None
     try:
         result = datetime.fromisoformat(value.replace("Z", "+00:00"))
-    except (ValueError, OverflowError):
+    except ValueError, OverflowError:
         return None
     if result.tzinfo is None:
         result = result.replace(tzinfo=UTC)
