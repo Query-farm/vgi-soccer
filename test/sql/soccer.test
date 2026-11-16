@@ -1,0 +1,49 @@
+# name: test/sql/soccer.test
+# description: Hermetic end-to-end coverage: every current table and function family,
+#   served from the recorded fixtures by test/mock_api/server.py (see ci/run-integration.sh).
+# group: [soccer]
+
+require vgi
+
+require-env VGI_SOCCER_WORKER
+
+require-env SOCCER_ESPN_SITE_URL
+
+statement ok
+ATTACH 'soccer' (TYPE vgi, LOCATION '{VGI_SOCCER_WORKER}');
+
+query I
+SELECT count(*) FROM soccer.main.leagues;
+----
+12
+
+query I
+SELECT count(DISTINCT league_slug) FROM soccer.main.current_standings;
+----
+5
+
+query I
+SELECT count(*) FROM soccer.main.current_matches;
+----
+6
+
+query I
+SELECT count(DISTINCT league_slug) FROM soccer.main.current_stat_leaders;
+----
+5
+
+# Leicester's 2015-16 title.
+query I
+SELECT points FROM soccer.main.standings(league := 'eng.1', season := 2015) WHERE rank = 1;
+----
+81
+
+query I
+SELECT count(*) FILTER (WHERE scoring_play) FROM soccer.main.match_key_events(401879240);
+----
+8
+
+query T
+SELECT winner FROM soccer.main.world_cup_matches(2022) WHERE round = 'Final';
+----
+Argentina

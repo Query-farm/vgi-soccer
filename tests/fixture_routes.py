@@ -1,7 +1,7 @@
 """Map upstream request paths to the recorded, trimmed responses in tests/fixtures.
 
 The same router backs the in-process MockTransport tests and the local HTTP
-server used by the hermetic Haybarn end-to-end test, so both exercise the
+server behind the SQL tests (test/mock_api/server.py), so both exercise the
 real request paths the worker builds.
 """
 
