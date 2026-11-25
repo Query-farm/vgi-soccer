@@ -32,20 +32,22 @@ stored or rehosted. No credentials are needed. See
 [Data sources, terms and affiliation](#data-sources-terms-and-affiliation)
 before you use it.
 
+vgi-soccer 0.3.0 speaks VGI protocol 3.4, so it needs Haybarn 2.0.1 or newer (Haybarn 2.0.0 loads a 3.3 `vgi` extension that cannot attach it).
+
 ## Quick start
 
 The worker is not published to PyPI. `uvx` runs the tagged release straight from
 GitHub and caches it after the first use:
 
 ```bash
-uvx --from git+https://github.com/Query-farm/vgi-soccer@v0.2.2 vgi-soccer --help
+uvx --from git+https://github.com/Query-farm/vgi-soccer@v0.3.0 vgi-soccer --help
 ```
 
 Launch Haybarn with the catalog pre-attached:
 
 ```bash
 uvx haybarn-cli \
-  -cmd "INSTALL vgi FROM community; LOAD vgi; ATTACH 'soccer' (TYPE vgi, LOCATION 'uvx --from git+https://github.com/Query-farm/vgi-soccer@v0.2.2 vgi-soccer');" \
+  -cmd "INSTALL vgi FROM community; LOAD vgi; ATTACH 'soccer' (TYPE vgi, LOCATION 'uvx --from git+https://github.com/Query-farm/vgi-soccer@v0.3.0 vgi-soccer');" \
   :memory:
 ```
 
@@ -56,7 +58,7 @@ INSTALL vgi FROM community;
 LOAD vgi;
 ATTACH 'soccer' (
   TYPE vgi,
-  LOCATION 'uvx --from git+https://github.com/Query-farm/vgi-soccer@v0.2.2 vgi-soccer'
+  LOCATION 'uvx --from git+https://github.com/Query-farm/vgi-soccer@v0.3.0 vgi-soccer'
 );
 ```
 
@@ -265,7 +267,7 @@ to allow anonymous access:
 export VGI_SIGNING_KEY='a-long-random-secret-shared-by-every-replica'
 export VGI_BEARER_TOKENS='replace-with-a-random-token=haybarn'
 
-uvx --from git+https://github.com/Query-farm/vgi-soccer@v0.2.2 vgi-soccer-http \
+uvx --from git+https://github.com/Query-farm/vgi-soccer@v0.3.0 vgi-soccer-http \
   --host 0.0.0.0 \
   --port 8000 \
   --cors-origins 'https://sql.example.com' \
